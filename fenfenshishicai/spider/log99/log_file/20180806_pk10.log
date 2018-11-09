@@ -1,0 +1,26 @@
+2018-08-06 19:44:59,109 - append_purchase_lide.purchase_client_main - INFO - qnm123456qnm not start
+2018-08-06 19:45:05,286 - append_purchase_lide.purchase_client_main - INFO - user_name:qnm123456qnm
+2018-08-06 19:45:05,286 - append_purchase_lide.purchase_client_main - INFO - password:qnm123456qnm
+2018-08-06 19:45:05,286 - append_purchase_lide.purchase_client_main - INFO - init monry:2
+2018-08-06 19:45:22,479 - append_purchase_lide.purchase_driver - WARNING - no notice or click notice error!
+2018-08-06 19:45:24,631 - append_purchase_lide.purchase_driver - WARNING - 登录异常，重新登录
+2018-08-06 19:53:17,469 - append_purchase_lide.purchase_client_main - INFO - qnm123456qnm not start
+2018-08-06 19:53:20,487 - append_purchase_lide.purchase_client_main - INFO - user_name:qnm123456qnm
+2018-08-06 19:53:20,496 - append_purchase_lide.purchase_client_main - INFO - password:qnm123456qnm
+2018-08-06 19:53:20,497 - append_purchase_lide.purchase_client_main - INFO - init monry:2
+2018-08-06 19:53:47,568 - append_purchase_lide.purchase_driver - INFO - login ok
+2018-08-06 19:54:02,012 - append_purchase_lide.purchase_client_main - WARNING - thread is not alive start!!!
+2018-08-06 19:54:02,015 - append_purchase_lide.client_thread - INFO - 开始购买
+2018-08-06 20:10:16,868 - append_purchase_lide.purchase_client_main - INFO - qnm123456qnm not start
+2018-08-06 20:10:17,701 - append_purchase_lide.purchase_client_main - INFO - qnm123456qnm not start
+2018-08-06 20:10:20,267 - append_purchase_lide.purchase_client_main - INFO - user_name:qnm123456qnm
+2018-08-06 20:10:20,267 - append_purchase_lide.purchase_client_main - INFO - password:qnm123456qnm
+2018-08-06 20:10:20,269 - append_purchase_lide.purchase_client_main - INFO - init monry:2
+2018-08-06 20:10:46,828 - append_purchase_lide.purchase_driver - INFO - login ok
+2018-08-06 20:10:48,835 - append_purchase_lide.purchase_client_main - WARNING - thread is not alive start!!!
+2018-08-06 20:12:40,296 - append_purchase_lide.purchase_client_main - INFO - qnm123456qnm not start
+2018-08-06 20:12:43,588 - append_purchase_lide.purchase_client_main - INFO - user_name:qnm123456qnm
+2018-08-06 20:12:43,588 - append_purchase_lide.purchase_client_main - INFO - password:qnm123456qnm
+2018-08-06 20:12:43,592 - append_purchase_lide.purchase_client_main - INFO - init monry:2
+2018-08-06 20:13:09,868 - append_purchase_lide.purchase_driver - INFO - login ok
+2018-08-06 20:13:11,869 - append_purchase_lide.purchase_client_main - WARNING - thread is not alive start!!!

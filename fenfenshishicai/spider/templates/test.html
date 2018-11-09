@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% for oo in obj_pro%}
+{{ oo.user_name }}
+{{ oo.user_status }}
+    <br>
+{% endfor %}
+
+{#{% for oo in obj_pro_purchase%}#}
+{#    {{ oo.purchase_record_rule }}#}
+{#{{ oo.purchase_record_id }}#}
+{#{{ oo.purchase_record_column }}#}
+{#    {{ oo.purchase_record_value }}#}
+{##}
+{#    <br>#}
+{#{% endfor %}#}
+
+
+{% for oo in obj_pro_predict%}
+    {{ oo.kill_predict_date }}
+    {{ oo.kill_predict_time }}
+    {{ oo.lottery_id }}
+{{ oo.lottery_number }}
+{{ oo.kill_predict_number }}
+    {{ oo.gain_money }}
+    <br>
+{% endfor %}
+
+
+
+{% comment %}    {{ obj_pro_predict.lottery_id }}
+{{ obj_pro_predict.lottery_number }}
+{{ obj_pro_predict.kill_predict_number }}{% endcomment %}
+
+
+{% for oo in obj_pro_kill_predict%}
+    {{ oo.lottery_id }}===
+{{ oo.percent_all_list_desc }}===
+    {{ oo.lottery_number }}===
+    {{ oo.predict_number_all }}
+    <br>
+{% endfor %}
+
+
+{#{% for oo in obj_pro_fiance%}#}
+{#    {{ oo.fiance_record_id }}#}
+{#{{ oo.fiance_record_lottery_number }}#}
+{#{{ oo.fiance_record_rule }}#}
+{#    {{ oo.purchase_record_column }}#}
+{#{{ oo.fiance_record_value }}#}
+{#{{ oo.fiance_record_money }}#}
+{#{{ oo.fiance_record_profit }}#}
+{#    {{ oo.fiance_lose_win }}#}
+{#    <br>#}
+{#{% endfor %}#}
+
+
+{% for oo in prob_data%}
+{{ oo.lottery_month }}
+{{ oo.lottery_date }}
+{{ oo.lottery_time }}
+{{ oo.lottery_id }}
+    {{ oo.lottery_number }}
+    <br>
+{% endfor %}
+
+{{ prob_user.user_name }}
+{{ prob_user.user_status }}
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+2018-08-27 12:50:11,947 - append_predict.main - INFO - qnm123456qnm not start
+2018-08-27 12:50:12,377 - append_predict.main - INFO - 08520aaaa not start
+2018-08-27 12:51:48,315 - append_predict.main - INFO - qnm123456qnm not start
+2018-08-27 12:51:49,125 - append_predict.main - INFO - 08520aaaa not start
+2018-08-27 12:52:33,440 - append_predict.main - DEBUG - thread is not alive start!!!
+2018-08-27 12:52:33,441 - append_predict.thread - INFO - start purchase
+2018-08-27 12:53:30,921 - append_predict.main - DEBUG - predicts is null
+2018-08-27 12:53:30,921 - append_predict.main - DEBUG - lottery_id: 0
+2018-08-27 12:53:30,923 - append_predict.main - DEBUG - no predict record in history
+2018-08-27 12:53:30,930 - append_predict.main - INFO - save predict_lottery_id : 201808270293
+2018-08-27 12:53:30,933 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-27 12:53:32,098 - append_predict.thread - INFO - start purchase
+2018-08-27 12:53:35,091 - append_predict.main - DEBUG - lottery_id: 201808270293
+2018-08-27 12:53:35,092 - append_predict.main - INFO - lottery_num: 6,2,4,2,4
+2018-08-27 12:53:35,092 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-27 12:53:35,092 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-27 12:53:35,094 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-27 12:53:35,094 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-27 12:53:35,094 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-27 12:53:35,094 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-27 12:53:35,095 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-27 12:53:35,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-27 12:53:35,095 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-27 12:53:35,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-27 12:53:35,095 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-27 12:53:35,095 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-27 12:53:35,255 - append_predict.main - INFO - save predict_lottery_id : 201808270294
+2018-08-27 12:53:35,256 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-27 12:53:36,401 - append_predict.thread - INFO - start purchase
+2018-08-27 12:53:39,533 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:53:39,535 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:53:39,536 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:53:43,220 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:53:43,221 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:53:43,221 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:53:46,992 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:53:46,994 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:53:46,994 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:53:50,559 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:53:50,561 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:53:50,561 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:53:54,236 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:53:54,237 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:53:54,237 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:53:58,434 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:53:58,434 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:53:58,434 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:02,052 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:54:02,055 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:02,055 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:03,813 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:54:03,815 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:03,815 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:08,197 - append_predict.main - DEBUG - lottery_id: 201808270294
+2018-08-27 12:54:08,200 - append_predict.main - INFO - lottery_num: 3,6,3,3,7
+2018-08-27 12:54:08,200 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-27 12:54:08,200 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-27 12:54:08,200 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-27 12:54:08,200 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-27 12:54:08,200 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-27 12:54:08,200 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-27 12:54:08,200 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-27 12:54:08,200 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-27 12:54:08,201 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-27 12:54:08,201 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-27 12:54:08,201 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-27 12:54:08,201 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-27 12:54:08,275 - append_predict.main - INFO - save predict_lottery_id : 201808270295
+2018-08-27 12:54:08,275 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-27 12:54:09,358 - append_predict.thread - INFO - start purchase
+2018-08-27 12:54:12,456 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:12,457 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:12,457 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:16,372 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:16,375 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:16,375 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:18,719 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:18,723 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:18,724 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:23,163 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:23,164 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:23,164 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:26,822 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:26,823 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:26,825 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:30,556 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:30,559 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:30,559 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:34,469 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:34,470 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:34,470 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:37,861 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:37,864 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:37,865 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:42,700 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:42,701 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:42,701 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:46,322 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:46,322 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:46,322 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 12:54:50,036 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 12:54:50,038 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 12:54:50,039 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 23:59:48,318 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 23:59:48,319 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 23:59:48,321 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 23:59:52,967 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 23:59:52,970 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 23:59:52,970 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-27 23:59:57,865 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-27 23:59:57,868 - append_predict.main - INFO - lottery_num: 0
+2018-08-27 23:59:57,868 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:02,690 - append_predict.main - DEBUG - lottery_id: 201808270295
+2018-08-28 00:00:02,690 - append_predict.main - INFO - lottery_num: 1,1,6,2,1
+2018-08-28 00:00:02,691 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-28 00:00:02,691 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-28 00:00:02,691 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-28 00:00:02,693 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-28 00:00:02,693 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-28 00:00:02,693 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-28 00:00:02,693 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-28 00:00:02,694 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-28 00:00:02,694 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-28 00:00:02,694 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-28 00:00:02,694 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-28 00:00:02,694 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-28 00:00:02,917 - append_predict.main - INFO - save predict_lottery_id : 201808270296
+2018-08-28 00:00:02,918 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-28 00:00:04,065 - append_predict.thread - INFO - start purchase
+2018-08-28 00:00:07,204 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:07,206 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:07,207 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:11,431 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:11,433 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:11,434 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:15,401 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:15,401 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:15,401 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:19,703 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:19,703 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:19,707 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:23,859 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:23,861 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:23,861 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:27,780 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:27,782 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:27,782 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:31,750 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:31,752 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:31,753 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:35,723 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:35,724 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:35,724 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:39,723 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:39,723 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:39,723 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:43,572 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:43,575 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:43,575 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:47,572 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:47,573 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:47,575 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:51,529 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:51,530 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:51,532 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:55,624 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:55,625 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:55,625 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:00:59,641 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:00:59,642 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:00:59,642 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:04,349 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:04,351 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:04,351 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:08,461 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:08,463 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:08,463 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:12,423 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:12,424 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:12,424 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:16,323 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:16,325 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:16,325 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:20,375 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:20,378 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:20,378 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:24,200 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:24,201 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:24,203 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:28,134 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:28,135 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:28,135 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:32,059 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:32,062 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:32,062 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:36,382 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:36,384 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:36,385 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:40,309 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:40,309 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:40,311 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:45,181 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:45,183 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:45,184 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:49,426 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:49,427 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:49,427 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:01:53,680 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:01:53,683 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:01:53,684 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:05,161 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:05,164 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:05,164 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:10,418 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:10,421 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:10,423 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:14,654 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:14,655 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:14,657 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:18,721 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:18,737 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:18,739 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:22,930 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:22,931 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:22,931 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:26,767 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:26,769 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:26,769 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:30,704 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:30,706 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:30,707 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:34,605 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:34,607 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:34,608 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:39,289 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:39,290 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:39,290 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:43,365 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:43,367 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:43,368 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:47,346 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:47,348 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:47,348 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:51,240 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:51,243 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:51,243 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:55,108 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:55,108 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:55,109 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:02:59,430 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:02:59,430 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:02:59,431 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:03,352 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:03,354 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:03,355 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:07,994 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:07,996 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:07,999 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:12,691 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:12,693 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:12,693 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:16,806 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:16,808 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:16,809 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:20,793 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:20,796 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:20,796 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:24,752 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:24,753 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:24,753 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:45,651 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:45,653 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:45,653 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:49,780 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:49,783 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:49,785 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:53,470 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:53,473 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:53,473 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:03:57,315 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:03:57,318 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:03:57,318 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:02,069 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:02,072 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:02,072 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:06,342 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:06,342 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:06,342 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:10,301 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:10,302 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:10,303 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:15,474 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:15,476 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:15,476 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:19,336 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:19,338 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:19,338 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:23,200 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:23,201 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:23,203 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:27,226 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:27,229 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:27,229 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:31,318 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:31,319 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:31,319 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:35,318 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:35,319 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:35,319 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:39,118 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:39,118 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:39,119 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:42,884 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:42,885 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:42,885 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:46,927 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:46,927 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:46,927 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:50,812 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:50,813 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:50,815 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:54,673 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:54,674 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:54,674 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:04:58,341 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:04:58,342 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:04:58,344 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:01,913 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:01,914 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:01,914 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:05,700 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:05,701 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:05,701 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:09,667 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:09,670 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:09,670 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:13,618 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:13,621 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:13,621 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:17,746 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:17,749 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:17,749 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:21,476 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:21,476 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:21,476 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:25,194 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:25,197 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:25,197 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:29,334 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:29,335 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:29,336 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:33,104 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:33,105 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:33,105 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:36,734 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:36,737 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:36,737 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:40,448 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:40,450 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:40,450 - append_predict.main - ERROR - wait kaijiang. continue....
+2018-08-28 00:05:43,992 - append_predict.main - DEBUG - lottery_id: 201808270296
+2018-08-28 00:05:43,993 - append_predict.main - INFO - lottery_num: 0
+2018-08-28 00:05:43,993 - append_predict.main - ERROR - wait kaijiang. continue....

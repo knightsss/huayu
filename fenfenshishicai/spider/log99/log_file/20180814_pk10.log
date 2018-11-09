@@ -1,0 +1,739 @@
+2018-08-14 16:50:56,948 - append_predict.main - INFO - qnm123456qnm not start
+2018-08-14 16:51:40,253 - append_predict.main - DEBUG - thread is not alive start!!!
+2018-08-14 16:51:40,253 - append_predict.thread - INFO - start purchase
+2018-08-14 16:52:53,374 - append_predict.main - DEBUG - predicts is null
+2018-08-14 16:52:53,374 - append_predict.main - DEBUG - lottery_id: 0
+2018-08-14 16:52:55,375 - append_predict.main - DEBUG - no predict record in history
+2018-08-14 16:52:55,390 - append_predict.main - INFO - save predict_lottery_id : 201808140532
+2018-08-14 16:52:55,391 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 16:52:55,519 - append_predict.thread - INFO - start purchase
+2018-08-14 16:53:02,186 - append_predict.main - DEBUG - lottery_id: 201808140532
+2018-08-14 16:53:04,188 - append_predict.main - INFO - lottery_num: 6,0,2,9,6
+2018-08-14 16:53:04,188 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 16:53:04,190 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 16:53:04,364 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 16:53:04,365 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 16:53:04,385 - append_predict.main - INFO - save predict_lottery_id : 201808140533
+2018-08-14 16:53:04,388 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 16:53:04,539 - append_predict.thread - INFO - start purchase
+2018-08-14 16:53:10,078 - append_predict.main - DEBUG - lottery_id: 201808140533
+2018-08-14 16:53:12,088 - append_predict.main - INFO - lottery_num: 5,3,4,3,2
+2018-08-14 16:53:12,092 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 16:53:12,092 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 16:53:12,092 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 16:53:12,094 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 16:53:12,094 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 16:53:12,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 16:53:12,095 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 16:53:12,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 16:53:12,095 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 16:53:12,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 16:53:12,095 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 16:53:12,096 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 16:53:12,289 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 16:53:12,289 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 16:53:12,302 - append_predict.main - INFO - save predict_lottery_id : 201808140534
+2018-08-14 16:53:12,302 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 16:53:12,529 - append_predict.thread - INFO - start purchase
+2018-08-14 16:53:14,265 - append_predict.spider_pk10 - ERROR - spider pay interface faild! please exit process......  over purchase!!!
+2018-08-14 17:26:12,940 - append_predict.main - INFO - qnm123456qnm not start
+2018-08-14 17:26:43,351 - append_predict.main - DEBUG - thread is not alive start!!!
+2018-08-14 17:26:43,351 - append_predict.thread - INFO - start purchase
+2018-08-14 17:26:57,042 - append_predict.main - DEBUG - lottery_id: 201808140534
+2018-08-14 17:26:59,045 - append_predict.main - INFO - lottery_num: 5,5,7,9,9
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:26:59,046 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:26:59,048 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:26:59,048 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:26:59,206 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:26:59,206 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:26:59,223 - append_predict.main - INFO - save predict_lottery_id : 201808140567
+2018-08-14 17:26:59,223 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:26:59,349 - append_predict.thread - INFO - start purchase
+2018-08-14 17:27:07,724 - append_predict.main - DEBUG - lottery_id: 201808140567
+2018-08-14 17:27:09,727 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:27:09,727 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:27:28,980 - append_predict.main - DEBUG - lottery_id: 201808140567
+2018-08-14 17:27:30,984 - append_predict.main - INFO - lottery_num: 9,2,7,0,2
+2018-08-14 17:27:30,984 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:27:30,984 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:27:30,986 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:27:30,986 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:27:30,986 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:27:30,986 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:27:30,986 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:27:30,986 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:27:30,986 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:27:30,986 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:27:30,987 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:27:30,987 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:27:31,082 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:27:31,084 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:27:31,098 - append_predict.main - INFO - save predict_lottery_id : 201808140568
+2018-08-14 17:27:31,098 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:27:31,161 - append_predict.thread - INFO - start purchase
+2018-08-14 17:27:40,375 - append_predict.main - DEBUG - lottery_id: 201808140568
+2018-08-14 17:27:42,378 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:27:42,378 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:28:00,286 - append_predict.main - DEBUG - lottery_id: 201808140568
+2018-08-14 17:28:02,289 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:28:02,289 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:28:18,559 - append_predict.main - DEBUG - lottery_id: 201808140568
+2018-08-14 17:28:20,562 - append_predict.main - INFO - lottery_num: 8,9,1,6,3
+2018-08-14 17:28:20,562 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:28:20,562 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:28:20,562 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:28:20,562 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:28:20,563 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:28:20,563 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:28:20,563 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:28:20,565 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:28:20,565 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:28:20,565 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:28:20,565 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:28:20,565 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:28:20,644 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:28:20,644 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:28:20,658 - append_predict.main - INFO - save predict_lottery_id : 201808140569
+2018-08-14 17:28:20,660 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:28:20,732 - append_predict.thread - INFO - start purchase
+2018-08-14 17:28:28,625 - append_predict.main - DEBUG - lottery_id: 201808140569
+2018-08-14 17:28:30,627 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:28:30,628 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:28:46,213 - append_predict.main - DEBUG - lottery_id: 201808140569
+2018-08-14 17:28:48,214 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:28:48,216 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:29:03,619 - append_predict.main - DEBUG - lottery_id: 201808140569
+2018-08-14 17:29:05,622 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:29:05,624 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:29:20,864 - append_predict.main - DEBUG - lottery_id: 201808140569
+2018-08-14 17:29:22,865 - append_predict.main - INFO - lottery_num: 0,4,8,0,4
+2018-08-14 17:29:22,865 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:29:22,865 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:29:22,865 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:29:22,867 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:29:22,867 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:29:22,867 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:29:22,867 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:29:22,867 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:29:22,867 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:29:22,868 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:29:22,868 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:29:22,868 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:29:23,020 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:29:23,020 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:29:23,038 - append_predict.main - INFO - save predict_lottery_id : 201808140570
+2018-08-14 17:29:23,038 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:29:23,315 - append_predict.thread - INFO - start purchase
+2018-08-14 17:29:28,549 - append_predict.main - DEBUG - lottery_id: 201808140570
+2018-08-14 17:29:30,552 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:29:30,552 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:29:46,127 - append_predict.main - DEBUG - lottery_id: 201808140570
+2018-08-14 17:29:48,128 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:29:48,130 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:30:03,720 - append_predict.main - DEBUG - lottery_id: 201808140570
+2018-08-14 17:30:05,723 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:30:05,723 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:30:21,378 - append_predict.main - DEBUG - lottery_id: 201808140570
+2018-08-14 17:30:23,380 - append_predict.main - INFO - lottery_num: 1,9,6,1,9
+2018-08-14 17:30:23,381 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:30:23,382 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:30:23,382 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:30:23,382 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:30:23,384 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:30:23,384 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:30:23,384 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:30:23,384 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:30:23,384 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:30:23,384 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:30:23,384 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:30:23,384 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:30:23,506 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:30:23,507 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:30:23,520 - append_predict.main - INFO - save predict_lottery_id : 201808140571
+2018-08-14 17:30:23,520 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:30:23,625 - append_predict.thread - INFO - start purchase
+2018-08-14 17:30:29,105 - append_predict.main - DEBUG - lottery_id: 201808140571
+2018-08-14 17:30:31,108 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:30:31,108 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:30:46,365 - append_predict.main - DEBUG - lottery_id: 201808140571
+2018-08-14 17:30:48,368 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:30:48,368 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:31:03,632 - append_predict.main - DEBUG - lottery_id: 201808140571
+2018-08-14 17:31:05,638 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:31:05,640 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:31:21,092 - append_predict.main - DEBUG - lottery_id: 201808140571
+2018-08-14 17:31:23,092 - append_predict.main - INFO - lottery_num: 5,8,5,5,5
+2018-08-14 17:31:23,094 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:31:23,094 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:31:23,094 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:31:23,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:31:23,095 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:31:23,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:31:23,095 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:31:23,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:31:23,095 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:31:23,095 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:31:23,095 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:31:23,096 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:31:23,236 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:31:23,236 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:31:23,260 - append_predict.main - INFO - save predict_lottery_id : 201808140572
+2018-08-14 17:31:23,262 - append_predict.main - INFO - save purchase_number_list : [-1, 0, -1, -1, -1]
+2018-08-14 17:31:23,338 - append_predict.thread - INFO - start purchase
+2018-08-14 17:31:28,469 - append_predict.main - DEBUG - lottery_id: 201808140572
+2018-08-14 17:31:30,470 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:31:30,473 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:31:46,118 - append_predict.main - DEBUG - lottery_id: 201808140572
+2018-08-14 17:31:48,121 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:31:48,122 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:32:04,311 - append_predict.main - DEBUG - lottery_id: 201808140572
+2018-08-14 17:32:06,313 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:32:06,313 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:32:21,845 - append_predict.main - DEBUG - lottery_id: 201808140572
+2018-08-14 17:32:23,851 - append_predict.main - INFO - lottery_num: 1,0,7,3,1
+2018-08-14 17:32:23,851 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:32:23,851 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:32:23,851 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:32:23,851 - append_predict.main - DEBUG - purchase_number_list[i]: [u' 0']
+2018-08-14 17:32:23,851 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:32:23,851 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:32:23,852 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:32:23,852 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:32:23,852 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:32:23,852 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:32:23,852 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:32:23,852 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:32:23,940 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:32:23,940 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:32:23,959 - append_predict.main - INFO - save predict_lottery_id : 201808140573
+2018-08-14 17:32:23,960 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:32:24,017 - append_predict.thread - INFO - start purchase
+2018-08-14 17:32:29,579 - append_predict.main - DEBUG - lottery_id: 201808140573
+2018-08-14 17:32:31,581 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:32:31,582 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:32:47,155 - append_predict.main - DEBUG - lottery_id: 201808140573
+2018-08-14 17:32:49,157 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:32:49,157 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:33:04,706 - append_predict.main - DEBUG - lottery_id: 201808140573
+2018-08-14 17:33:06,707 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:33:06,709 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:33:21,931 - append_predict.main - DEBUG - lottery_id: 201808140573
+2018-08-14 17:33:23,934 - append_predict.main - INFO - lottery_num: 2,6,4,4,6
+2018-08-14 17:33:23,934 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:33:23,934 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:33:23,934 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:33:23,938 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:33:23,938 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:33:23,938 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:33:23,938 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:33:23,938 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:33:23,940 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:33:23,940 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:33:23,940 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:33:23,940 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:33:24,036 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:33:24,036 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:33:24,053 - append_predict.main - INFO - save predict_lottery_id : 201808140574
+2018-08-14 17:33:24,053 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:33:24,115 - append_predict.thread - INFO - start purchase
+2018-08-14 17:33:29,551 - append_predict.main - DEBUG - lottery_id: 201808140574
+2018-08-14 17:33:31,553 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:33:31,553 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:33:47,286 - append_predict.main - DEBUG - lottery_id: 201808140574
+2018-08-14 17:33:49,289 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:33:49,289 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:34:04,687 - append_predict.main - DEBUG - lottery_id: 201808140574
+2018-08-14 17:34:06,690 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:34:06,690 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:34:22,003 - append_predict.main - DEBUG - lottery_id: 201808140574
+2018-08-14 17:34:24,006 - append_predict.main - INFO - lottery_num: 0,4,1,8,1
+2018-08-14 17:34:24,006 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:34:24,006 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:34:24,009 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:34:24,009 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:34:24,009 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:34:24,009 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:34:24,010 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:34:24,016 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:34:24,016 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:34:24,016 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:34:24,016 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:34:24,016 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:34:24,128 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:34:24,130 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:34:24,148 - append_predict.main - INFO - save predict_lottery_id : 201808140575
+2018-08-14 17:34:24,148 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:34:24,227 - append_predict.thread - INFO - start purchase
+2018-08-14 17:34:29,740 - append_predict.main - DEBUG - lottery_id: 201808140575
+2018-08-14 17:34:31,742 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:34:31,742 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:34:47,411 - append_predict.main - DEBUG - lottery_id: 201808140575
+2018-08-14 17:34:49,413 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:34:49,414 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:35:04,573 - append_predict.main - DEBUG - lottery_id: 201808140575
+2018-08-14 17:35:06,575 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:35:06,576 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:35:22,138 - append_predict.main - DEBUG - lottery_id: 201808140575
+2018-08-14 17:35:24,140 - append_predict.main - INFO - lottery_num: 7,1,8,6,4
+2018-08-14 17:35:24,141 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:35:24,141 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:35:24,141 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:35:24,141 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:35:24,141 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:35:24,141 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:35:24,141 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:35:24,141 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:35:24,142 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:35:24,142 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:35:24,142 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:35:24,142 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:35:24,229 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:35:24,229 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:35:24,253 - append_predict.main - INFO - save predict_lottery_id : 201808140576
+2018-08-14 17:35:24,253 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:35:24,354 - append_predict.thread - INFO - start purchase
+2018-08-14 17:35:29,880 - append_predict.main - DEBUG - lottery_id: 201808140576
+2018-08-14 17:35:31,881 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:35:31,881 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:35:47,437 - append_predict.main - DEBUG - lottery_id: 201808140576
+2018-08-14 17:35:49,441 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:35:49,443 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:36:04,954 - append_predict.main - DEBUG - lottery_id: 201808140576
+2018-08-14 17:36:06,957 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:36:06,957 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:36:22,384 - append_predict.main - DEBUG - lottery_id: 201808140576
+2018-08-14 17:36:24,385 - append_predict.main - INFO - lottery_num: 8,2,6,5,4
+2018-08-14 17:36:24,387 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:36:24,387 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:36:24,387 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:36:24,388 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:36:24,391 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:36:24,391 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:36:24,391 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:36:24,391 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:36:24,392 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:36:24,392 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:36:24,392 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:36:24,392 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:36:24,484 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:36:24,486 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:36:24,503 - append_predict.main - INFO - save predict_lottery_id : 201808140577
+2018-08-14 17:36:24,503 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:36:24,584 - append_predict.thread - INFO - start purchase
+2018-08-14 17:36:30,101 - append_predict.main - DEBUG - lottery_id: 201808140577
+2018-08-14 17:36:32,101 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:36:32,102 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:36:47,539 - append_predict.main - DEBUG - lottery_id: 201808140577
+2018-08-14 17:36:49,543 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:36:49,543 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:37:05,171 - append_predict.main - DEBUG - lottery_id: 201808140577
+2018-08-14 17:37:07,174 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:37:07,174 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:37:22,937 - append_predict.main - DEBUG - lottery_id: 201808140577
+2018-08-14 17:37:24,938 - append_predict.main - INFO - lottery_num: 7,0,3,0,3
+2018-08-14 17:37:24,940 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:37:24,940 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:37:24,941 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:37:24,941 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:37:24,941 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:37:24,941 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:37:24,941 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:37:24,943 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:37:24,943 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:37:24,943 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:37:24,943 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:37:24,944 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:37:25,036 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:37:25,038 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:37:25,052 - append_predict.main - INFO - save predict_lottery_id : 201808140578
+2018-08-14 17:37:25,052 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:37:25,115 - append_predict.thread - INFO - start purchase
+2018-08-14 17:37:30,186 - append_predict.main - DEBUG - lottery_id: 201808140578
+2018-08-14 17:37:32,193 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:37:32,197 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:37:47,427 - append_predict.main - DEBUG - lottery_id: 201808140578
+2018-08-14 17:37:49,430 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:37:49,431 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:38:04,694 - append_predict.main - DEBUG - lottery_id: 201808140578
+2018-08-14 17:38:06,694 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:38:06,696 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:38:22,079 - append_predict.main - DEBUG - lottery_id: 201808140578
+2018-08-14 17:38:24,086 - append_predict.main - INFO - lottery_num: 3,8,5,4,7
+2018-08-14 17:38:24,086 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:38:24,088 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:38:24,089 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:38:24,089 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:38:24,230 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:38:24,230 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:38:24,273 - append_predict.main - INFO - save predict_lottery_id : 201808140579
+2018-08-14 17:38:24,273 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:38:24,365 - append_predict.thread - INFO - start purchase
+2018-08-14 17:38:29,665 - append_predict.main - DEBUG - lottery_id: 201808140579
+2018-08-14 17:38:31,667 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:38:31,668 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:38:47,578 - append_predict.main - DEBUG - lottery_id: 201808140579
+2018-08-14 17:38:49,579 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:38:49,581 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:39:04,897 - append_predict.main - DEBUG - lottery_id: 201808140579
+2018-08-14 17:39:06,900 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:39:06,900 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:39:22,437 - append_predict.main - DEBUG - lottery_id: 201808140579
+2018-08-14 17:39:24,440 - append_predict.main - INFO - lottery_num: 7,8,0,6,0
+2018-08-14 17:39:24,441 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:39:24,441 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:39:24,441 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:39:24,441 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:39:24,443 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:39:24,443 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:39:24,443 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:39:24,443 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:39:24,444 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:39:24,444 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:39:24,444 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:39:24,444 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:39:24,566 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:39:24,568 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:39:24,584 - append_predict.main - INFO - save predict_lottery_id : 201808140580
+2018-08-14 17:39:24,584 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:39:24,703 - append_predict.thread - INFO - start purchase
+2018-08-14 17:39:29,756 - append_predict.main - DEBUG - lottery_id: 201808140580
+2018-08-14 17:39:31,759 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:39:31,759 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:39:47,069 - append_predict.main - DEBUG - lottery_id: 201808140580
+2018-08-14 17:39:49,072 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:39:49,072 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:40:04,542 - append_predict.main - DEBUG - lottery_id: 201808140580
+2018-08-14 17:40:06,542 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:40:06,543 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:40:22,022 - append_predict.main - DEBUG - lottery_id: 201808140580
+2018-08-14 17:40:24,026 - append_predict.main - INFO - lottery_num: 1,4,7,8,7
+2018-08-14 17:40:24,026 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:40:24,028 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:40:24,028 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:40:24,029 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:40:24,030 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:40:24,032 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:40:24,032 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:40:24,032 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:40:24,033 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:40:24,033 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:40:24,035 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:40:24,035 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:40:24,272 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:40:24,272 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:40:24,295 - append_predict.main - INFO - save predict_lottery_id : 201808140581
+2018-08-14 17:40:24,296 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:40:24,398 - append_predict.thread - INFO - start purchase
+2018-08-14 17:40:29,525 - append_predict.main - DEBUG - lottery_id: 201808140581
+2018-08-14 17:40:31,526 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:40:31,526 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:40:47,017 - append_predict.main - DEBUG - lottery_id: 201808140581
+2018-08-14 17:40:49,019 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:40:49,019 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:41:04,532 - append_predict.main - DEBUG - lottery_id: 201808140581
+2018-08-14 17:41:06,536 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:41:06,539 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:41:21,921 - append_predict.main - DEBUG - lottery_id: 201808140581
+2018-08-14 17:41:23,924 - append_predict.main - INFO - lottery_num: 6,6,3,9,8
+2018-08-14 17:41:23,924 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:41:23,924 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:41:23,924 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:41:23,924 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:41:23,924 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:41:23,924 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:41:23,926 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:41:23,926 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:41:23,926 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:41:23,926 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:41:23,926 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:41:23,927 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:41:24,013 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:41:24,015 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:41:24,033 - append_predict.main - INFO - save predict_lottery_id : 201808140582
+2018-08-14 17:41:24,033 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:41:24,099 - append_predict.thread - INFO - start purchase
+2018-08-14 17:41:29,507 - append_predict.main - DEBUG - lottery_id: 201808140582
+2018-08-14 17:41:31,507 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:41:31,509 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:41:47,154 - append_predict.main - DEBUG - lottery_id: 201808140582
+2018-08-14 17:41:49,157 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:41:49,157 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:42:04,441 - append_predict.main - DEBUG - lottery_id: 201808140582
+2018-08-14 17:42:06,444 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:42:06,444 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:42:21,783 - append_predict.main - DEBUG - lottery_id: 201808140582
+2018-08-14 17:42:23,786 - append_predict.main - INFO - lottery_num: 9,1,1,6,3
+2018-08-14 17:42:23,786 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:42:23,786 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:42:23,786 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:42:23,788 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:42:23,788 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:42:23,788 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:42:23,788 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:42:23,789 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:42:23,789 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:42:23,789 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:42:23,789 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:42:23,789 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:42:23,851 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:42:23,851 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:42:23,865 - append_predict.main - INFO - save predict_lottery_id : 201808140583
+2018-08-14 17:42:23,865 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:42:23,928 - append_predict.thread - INFO - start purchase
+2018-08-14 17:42:29,289 - append_predict.main - DEBUG - lottery_id: 201808140583
+2018-08-14 17:42:31,292 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:42:31,292 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:42:46,946 - append_predict.main - DEBUG - lottery_id: 201808140583
+2018-08-14 17:42:48,947 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:42:48,947 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:43:02,015 - append_predict.main - DEBUG - lottery_id: 201808140583
+2018-08-14 17:43:04,017 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:43:04,019 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:43:19,447 - append_predict.main - DEBUG - lottery_id: 201808140583
+2018-08-14 17:43:21,448 - append_predict.main - INFO - lottery_num: 7,9,7,9,3
+2018-08-14 17:43:21,454 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:43:21,454 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:43:21,456 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:43:21,456 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:43:21,456 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:43:21,456 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:43:21,456 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:43:21,457 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:43:21,457 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:43:21,457 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:43:21,457 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:43:21,457 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:43:21,523 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:43:21,523 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:43:21,536 - append_predict.main - INFO - save predict_lottery_id : 201808140584
+2018-08-14 17:43:21,536 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:43:21,601 - append_predict.thread - INFO - start purchase
+2018-08-14 17:43:26,805 - append_predict.main - DEBUG - lottery_id: 201808140584
+2018-08-14 17:43:28,806 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:43:28,806 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:43:44,339 - append_predict.main - DEBUG - lottery_id: 201808140584
+2018-08-14 17:43:46,342 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:43:46,344 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:44:01,960 - append_predict.main - DEBUG - lottery_id: 201808140584
+2018-08-14 17:44:03,961 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:44:03,961 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:44:19,555 - append_predict.main - DEBUG - lottery_id: 201808140584
+2018-08-14 17:44:21,559 - append_predict.main - INFO - lottery_num: 8,7,3,8,5
+2018-08-14 17:44:21,559 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:44:21,559 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:44:21,562 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:44:21,562 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:44:21,562 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:44:21,562 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:44:21,562 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:44:21,562 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:44:21,563 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:44:21,563 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:44:21,563 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:44:21,563 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:44:21,647 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:44:21,648 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:44:21,667 - append_predict.main - INFO - save predict_lottery_id : 201808140585
+2018-08-14 17:44:21,667 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:44:21,736 - append_predict.thread - INFO - start purchase
+2018-08-14 17:44:27,062 - append_predict.main - DEBUG - lottery_id: 201808140585
+2018-08-14 17:44:29,066 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:44:29,066 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:44:44,390 - append_predict.main - DEBUG - lottery_id: 201808140585
+2018-08-14 17:44:46,391 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:44:46,391 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:45:01,461 - append_predict.main - DEBUG - lottery_id: 201808140585
+2018-08-14 17:45:03,463 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:45:03,463 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:45:19,963 - append_predict.main - DEBUG - lottery_id: 201808140585
+2018-08-14 17:45:21,966 - append_predict.main - INFO - lottery_num: 2,2,3,0,7
+2018-08-14 17:45:21,967 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:45:21,969 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:45:21,969 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:45:21,969 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:45:21,969 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:45:21,970 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:45:21,970 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:45:21,970 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:45:21,970 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:45:21,970 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:45:21,970 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:45:21,970 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:45:22,130 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:45:22,130 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:45:22,151 - append_predict.main - INFO - save predict_lottery_id : 201808140586
+2018-08-14 17:45:22,151 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:45:22,269 - append_predict.thread - INFO - start purchase
+2018-08-14 17:45:28,345 - append_predict.main - DEBUG - lottery_id: 201808140586
+2018-08-14 17:45:30,345 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:45:30,348 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:45:46,736 - append_predict.main - DEBUG - lottery_id: 201808140586
+2018-08-14 17:45:48,740 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:45:48,747 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:46:04,647 - append_predict.main - DEBUG - lottery_id: 201808140586
+2018-08-14 17:46:06,651 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:46:06,651 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:46:22,444 - append_predict.main - DEBUG - lottery_id: 201808140586
+2018-08-14 17:46:24,447 - append_predict.main - INFO - lottery_num: 7,1,8,0,4
+2018-08-14 17:46:24,447 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:46:24,447 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:46:24,451 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:46:24,454 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:46:24,454 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:46:24,456 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:46:24,456 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:46:24,456 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:46:24,456 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:46:24,456 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:46:24,457 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:46:24,457 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:46:24,861 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:46:24,864 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:46:24,878 - append_predict.main - INFO - save predict_lottery_id : 201808140587
+2018-08-14 17:46:24,878 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:46:25,178 - append_predict.thread - INFO - start purchase
+2018-08-14 17:46:31,174 - append_predict.main - DEBUG - lottery_id: 201808140587
+2018-08-14 17:46:33,181 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:46:33,181 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:46:48,983 - append_predict.main - DEBUG - lottery_id: 201808140587
+2018-08-14 17:46:50,986 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:46:50,986 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:47:06,993 - append_predict.main - DEBUG - lottery_id: 201808140587
+2018-08-14 17:47:08,993 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:47:08,994 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:47:24,779 - append_predict.main - DEBUG - lottery_id: 201808140587
+2018-08-14 17:47:26,782 - append_predict.main - INFO - lottery_num: 3,4,2,0,0
+2018-08-14 17:47:26,782 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:47:26,783 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:47:26,783 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:47:26,783 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:47:26,783 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:47:26,785 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:47:26,785 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:47:26,785 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:47:26,785 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:47:26,786 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:47:26,786 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:47:26,786 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:47:27,219 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:47:27,224 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:47:27,240 - append_predict.main - INFO - save predict_lottery_id : 201808140588
+2018-08-14 17:47:27,240 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:47:27,450 - append_predict.thread - INFO - start purchase
+2018-08-14 17:47:33,035 - append_predict.main - DEBUG - lottery_id: 201808140588
+2018-08-14 17:47:35,036 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:47:35,040 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:47:50,513 - append_predict.main - DEBUG - lottery_id: 201808140588
+2018-08-14 17:47:52,517 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:47:52,517 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:48:07,719 - append_predict.main - DEBUG - lottery_id: 201808140588
+2018-08-14 17:48:09,721 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:48:09,723 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:48:25,194 - append_predict.main - DEBUG - lottery_id: 201808140588
+2018-08-14 17:48:27,196 - append_predict.main - INFO - lottery_num: 0,8,1,7,0
+2018-08-14 17:48:27,196 - append_predict.main - DEBUG - mingci [1]: 0
+2018-08-14 17:48:27,196 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:48:27,197 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:48:27,197 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:48:27,197 - append_predict.main - DEBUG - mingci [3]: 1
+2018-08-14 17:48:27,197 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:48:27,197 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:48:27,213 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:48:27,217 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:48:27,217 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:48:27,217 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:48:27,219 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:48:27,405 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:48:27,411 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:48:27,427 - append_predict.main - INFO - save predict_lottery_id : 201808140589
+2018-08-14 17:48:27,427 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:48:27,631 - append_predict.thread - INFO - start purchase
+2018-08-14 17:48:32,930 - append_predict.main - DEBUG - lottery_id: 201808140589
+2018-08-14 17:48:34,931 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:48:34,931 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:48:50,318 - append_predict.main - DEBUG - lottery_id: 201808140589
+2018-08-14 17:48:52,319 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:48:52,321 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:49:07,963 - append_predict.main - DEBUG - lottery_id: 201808140589
+2018-08-14 17:49:09,964 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:49:09,966 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:49:25,239 - append_predict.main - DEBUG - lottery_id: 201808140589
+2018-08-14 17:49:27,240 - append_predict.main - INFO - lottery_num: 7,8,6,7,5
+2018-08-14 17:49:27,242 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:49:27,242 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:49:27,242 - append_predict.main - DEBUG - mingci [2]: 0
+2018-08-14 17:49:27,243 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:49:27,243 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:49:27,243 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:49:27,243 - append_predict.main - DEBUG - mingci [4]: 1
+2018-08-14 17:49:27,243 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:49:27,243 - append_predict.main - DEBUG - mingci [5]: 1
+2018-08-14 17:49:27,243 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:49:27,243 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:49:27,244 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:49:27,381 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:49:27,381 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:49:27,407 - append_predict.main - INFO - save predict_lottery_id : 201808140590
+2018-08-14 17:49:27,407 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:49:27,601 - append_predict.thread - INFO - start purchase
+2018-08-14 17:49:32,816 - append_predict.main - DEBUG - lottery_id: 201808140590
+2018-08-14 17:49:34,818 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:49:34,819 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:49:50,336 - append_predict.main - DEBUG - lottery_id: 201808140590
+2018-08-14 17:49:52,339 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:49:52,341 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:50:07,815 - append_predict.main - DEBUG - lottery_id: 201808140590
+2018-08-14 17:50:09,816 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:50:09,818 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:50:25,273 - append_predict.main - DEBUG - lottery_id: 201808140590
+2018-08-14 17:50:27,276 - append_predict.main - INFO - lottery_num: 5,9,4,2,8
+2018-08-14 17:50:27,276 - append_predict.main - DEBUG - mingci [1]: 1
+2018-08-14 17:50:27,278 - append_predict.main - DEBUG - purchase_number_list[i]: [u'[-1']
+2018-08-14 17:50:27,280 - append_predict.main - DEBUG - mingci [2]: 1
+2018-08-14 17:50:27,280 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:50:27,280 - append_predict.main - DEBUG - mingci [3]: 0
+2018-08-14 17:50:27,282 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:50:27,282 - append_predict.main - DEBUG - mingci [4]: 0
+2018-08-14 17:50:27,282 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1']
+2018-08-14 17:50:27,282 - append_predict.main - DEBUG - mingci [5]: 0
+2018-08-14 17:50:27,282 - append_predict.main - DEBUG - purchase_number_list[i]: [u' -1]']
+2018-08-14 17:50:27,282 - append_predict.main - DEBUG - ------all_count: 5  ----target_count: 0 
+2018-08-14 17:50:27,282 - append_predict.main - DEBUG - target_count: 0.000000
+2018-08-14 17:50:27,364 - append_predict.main - INFO - last_purchase_hit: False
+2018-08-14 17:50:27,365 - append_predict.main - INFO - xiazhu_nums: 1
+2018-08-14 17:50:27,384 - append_predict.main - INFO - save predict_lottery_id : 201808140591
+2018-08-14 17:50:27,384 - append_predict.main - INFO - save purchase_number_list : [-1, -1, -1, -1, -1]
+2018-08-14 17:50:27,447 - append_predict.thread - INFO - start purchase
+2018-08-14 17:50:32,441 - append_predict.main - DEBUG - lottery_id: 201808140591
+2018-08-14 17:50:34,443 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:50:34,444 - append_predict.main - ERROR - pay interface lottery id request faild. continue....
+2018-08-14 17:50:51,196 - append_predict.main - DEBUG - lottery_id: 201808140591
+2018-08-14 17:50:53,198 - append_predict.main - INFO - lottery_num: 0
+2018-08-14 17:50:53,200 - append_predict.main - ERROR - pay interface lottery id request faild. continue....

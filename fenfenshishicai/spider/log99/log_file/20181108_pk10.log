@@ -1,0 +1,20 @@
+2018-11-08 20:00:42,924 - append_predict_tx_fenfen.main - INFO - 76aer not start
+2018-11-08 20:00:58,260 - append_predict_tx_fenfen.main - DEBUG - thread is not alive start!!!
+2018-11-08 20:00:58,262 - append_predict_tx_fenfen.thread - INFO - start purchase
+2018-11-08 20:01:02,779 - append_predict_tx_fenfen.spider_pk10 - INFO - base_date_forward_six:20181108
+2018-11-08 20:01:02,779 - append_predict_tx_fenfen.spider_pk10 - INFO - base_date:20181108
+2018-11-08 20:01:02,878 - append_predict_tx_fenfen.spider_pk10 - INFO -  6 hours ago is:20181108
+2018-11-08 20:01:44,573 - append_purchase_tx_fenfen.purchase_client_main - INFO - 76aer not start
+2018-11-08 20:01:59,071 - append_purchase_tx_fenfen.purchase_client_main - INFO - 76aer not start
+2018-11-08 20:02:13,013 - append_purchase_tx_fenfen.purchase_client_main - INFO - 76aer not start
+2018-11-08 20:02:17,022 - append_purchase_tx_fenfen.purchase_client_main - INFO - user_name:76aer
+2018-11-08 20:02:17,023 - append_purchase_tx_fenfen.purchase_client_main - INFO - password:11111
+2018-11-08 20:02:17,023 - append_purchase_tx_fenfen.purchase_client_main - INFO - init money_list:[u'2', u'4', u'8', u'16', u'32', u'64']
+2018-11-08 20:02:42,967 - append_purchase_tx_fenfen.purchase_driver - INFO - login ok
+2018-11-08 20:02:46,408 - append_purchase_tx_fenfen.purchase_client_main - WARNING - thread is not alive start!!!
+2018-11-08 20:03:03,000 - append_predict_tx_fenfen.thread - INFO - stop
+2018-11-08 20:03:03,000 - append_predict_tx_fenfen.main - DEBUG - not thread alive
+2018-11-08 20:03:05,463 - append_purchase_tx_fenfen.purchase_client_main - INFO - user_name:76aer
+2018-11-08 20:03:05,463 - append_purchase_tx_fenfen.purchase_client_main - INFO - password:11111
+2018-11-08 20:03:05,464 - append_purchase_tx_fenfen.purchase_client_main - INFO - init money_list:[u'2', u'4', u'8', u'16', u'32', u'64']
+2018-11-08 20:03:05,467 - append_purchase_tx_fenfen.client_thread - INFO - stop

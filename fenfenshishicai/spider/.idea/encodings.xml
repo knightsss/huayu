@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/append_predict_tx_fenfen/models.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_predict_tx_fenfen/predict_append_rule2.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_predict_tx_fenfen/predict_driver.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_predict_tx_fenfen/predict_main.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_predict_tx_fenfen/report.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_predict_tx_fenfen/spider_pk10.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_predict_tx_fenfen/thread.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_purchase/client_thread.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_purchase/purchase_client_main.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_purchase/purchase_driver.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_purchase_tx_fenfen/client_thread.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_purchase_tx_fenfen/purchase_client_main.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/append_purchase_tx_fenfen/purchase_driver.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log99/pk_log.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/append_predict_list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/append_predict_main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/append_purchase_main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/append_purchase_tx_fenfen_main.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/test.html" charset="UTF-8" />
+  </component>
+</project>
+

@@ -1,0 +1,370 @@
+2018-11-09 12:47:41,556 - append_predict_tx_fenfen.main - INFO - 76aer not start
+2018-11-09 12:48:35,861 - append_predict_tx_fenfen.main - DEBUG - thread is not alive start!!!
+2018-11-09 12:48:35,861 - append_predict_tx_fenfen.thread - INFO - start purchase
+2018-11-09 12:48:39,878 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:48:44,019 - append_predict_tx_fenfen.main - DEBUG - predicts is null
+2018-11-09 12:48:44,019 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 0
+2018-11-09 12:48:44,019 - append_predict_tx_fenfen.main - DEBUG - no predict record in history
+2018-11-09 12:48:44,023 - append_predict_tx_fenfen.main - INFO - save predict_lottery_id : 201811090031
+2018-11-09 12:48:44,023 - append_predict_tx_fenfen.main - INFO - save purchase_number_list : [1, -1, -1, -1, 1]
+2018-11-09 12:48:45,108 - append_predict_tx_fenfen.thread - INFO - start purchase
+2018-11-09 12:48:48,664 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:48:49,042 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:48:49,045 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:48:49,045 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:48:53,434 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:48:53,723 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:48:53,724 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:48:53,724 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:48:58,184 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:48:58,551 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:48:58,552 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:48:58,552 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:02,953 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:03,352 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:03,354 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:03,368 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:07,799 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:07,832 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:07,835 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:07,835 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:12,460 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:12,496 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:12,496 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:12,506 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:17,104 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:17,128 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:17,131 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:17,131 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:21,562 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:21,602 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:21,604 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:21,605 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:26,219 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:26,243 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:26,253 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:26,253 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:30,864 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:30,890 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:30,891 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:30,891 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:35,505 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:35,549 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:35,559 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:35,561 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:39,964 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:40,046 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:40,049 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:40,059 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:44,688 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:45,125 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:45,125 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:45,127 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:49,542 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:49,885 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:49,887 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:49,888 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:54,266 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:54,578 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:54,578 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:54,578 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:49:59,180 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:49:59,273 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:49:59,275 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:49:59,282 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:03,905 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:03,948 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:03,950 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:03,950 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:08,556 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:08,582 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:08,588 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:08,588 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:13,204 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:13,230 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:13,237 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:13,239 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:17,838 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:17,868 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:17,869 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:17,878 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:22,500 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:22,533 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:22,536 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:22,536 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:26,983 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:27,016 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:27,017 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:27,017 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:31,414 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:31,440 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:31,440 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:31,441 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:36,049 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:36,075 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:36,075 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:36,076 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:40,687 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:40,710 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:40,711 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:40,711 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:45,322 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:45,358 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:45,359 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:45,361 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:50:49,970 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:50:49,993 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:50:49,994 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:50:49,994 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:59:08,839 - append_predict_tx_fenfen.main - INFO - 76aer not start
+2018-11-09 12:59:10,272 - append_predict_tx_fenfen.main - INFO - 76aer not start
+2018-11-09 12:59:28,078 - append_predict_tx_fenfen.main - DEBUG - thread is not alive start!!!
+2018-11-09 12:59:28,081 - append_predict_tx_fenfen.thread - INFO - start purchase
+2018-11-09 12:59:31,513 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:59:41,286 - append_predict_tx_fenfen.main - DEBUG - predicts is null
+2018-11-09 12:59:41,286 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 0
+2018-11-09 12:59:41,286 - append_predict_tx_fenfen.main - DEBUG - no predict record in history
+2018-11-09 12:59:41,289 - append_predict_tx_fenfen.main - INFO - save predict_lottery_id : 201811090031
+2018-11-09 12:59:41,289 - append_predict_tx_fenfen.main - INFO - save purchase_number_list : [1, -1, 0, 1, -1]
+2018-11-09 12:59:42,453 - append_predict_tx_fenfen.thread - INFO - start purchase
+2018-11-09 12:59:45,869 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:59:46,079 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:59:46,081 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:59:46,089 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:59:50,539 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:59:50,736 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:59:50,736 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:59:50,736 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:59:55,121 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:59:55,328 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:59:55,335 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:59:55,335 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 12:59:59,717 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 12:59:59,864 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 12:59:59,865 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 12:59:59,867 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:04,272 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:04,424 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:04,426 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:04,426 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:08,834 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:09,197 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:09,203 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:09,209 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:13,592 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:13,737 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:13,739 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:13,739 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:18,137 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:18,276 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:18,282 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:18,283 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:22,677 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:22,877 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:22,878 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:22,880 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:27,260 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:27,480 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:27,480 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:27,480 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:31,861 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:32,023 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:32,023 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:32,023 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:36,394 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:36,575 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:36,576 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:36,576 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:40,953 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:41,088 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:41,094 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:41,095 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:45,474 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:45,674 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:45,677 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:45,677 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:50,048 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:50,289 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:50,289 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:50,289 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:54,684 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:54,831 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:54,832 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:54,832 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:00:59,204 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:00:59,351 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:00:59,354 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:00:59,355 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:03,729 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:03,914 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:03,915 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:03,915 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:08,293 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:08,578 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:08,579 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:08,579 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:12,950 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:13,096 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:13,098 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:13,098 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:17,466 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:17,655 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:17,657 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:17,657 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:22,028 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:22,164 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:22,165 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:22,167 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:26,559 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:26,767 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:26,769 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:26,769 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:31,144 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:31,355 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:31,355 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:31,355 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:35,720 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:35,864 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:35,865 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:35,865 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:40,233 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:40,368 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:40,369 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:40,369 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:44,750 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:45,000 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:45,003 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:45,003 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:49,417 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:49,588 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:49,588 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:49,588 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:53,997 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:54,151 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:54,161 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:54,161 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:01:58,535 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:01:58,743 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:01:58,744 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:01:58,744 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:03,144 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:03,293 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:03,301 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:03,302 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:07,671 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:07,948 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:07,957 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:07,959 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:12,365 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:12,517 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:12,519 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:12,519 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:16,895 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:17,091 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:17,098 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:17,098 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:21,464 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:21,657 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:21,657 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:21,657 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:26,073 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:26,259 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:26,260 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:26,262 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:30,630 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:30,826 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:30,828 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:30,828 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:35,240 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:35,384 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:35,384 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:35,385 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:39,753 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:39,894 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:39,894 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:39,895 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:44,265 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:44,519 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:44,519 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:44,519 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:48,917 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:49,061 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:49,062 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:49,062 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:53,440 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:53,576 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:53,578 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:53,578 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:02:57,954 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:02:58,161 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:02:58,161 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:02:58,163 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:02,548 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:02,759 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:02,773 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:02,773 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:07,515 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:07,747 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:07,750 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:07,750 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:12,144 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:12,331 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:12,332 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:12,332 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:16,717 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:16,864 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:16,865 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:16,865 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:21,237 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:21,431 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:21,443 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:21,443 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:25,872 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:26,104 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:26,111 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:26,111 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:30,483 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:30,628 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:30,631 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:30,631 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:35,026 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:35,194 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:35,194 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:35,194 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:39,578 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:39,799 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:39,801 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:39,802 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:44,213 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:44,411 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:44,413 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:44,414 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:48,786 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:48,933 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:48,943 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:48,944 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:53,309 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:53,494 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:53,505 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:53,505 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:03:57,884 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:03:58,038 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:03:58,039 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:03:58,039 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:04:02,421 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:04:02,631 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:04:02,632 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:04:02,634 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:04:07,010 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:04:07,273 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:04:07,275 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:04:07,276 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:04:11,706 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:04:12,006 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:04:12,007 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:04:12,007 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:04:16,428 - append_predict_tx_fenfen.spider_pk10 - INFO - hours is:20181109
+2018-11-09 13:04:16,684 - append_predict_tx_fenfen.main - DEBUG - lottery_id: 201811090031
+2018-11-09 13:04:16,686 - append_predict_tx_fenfen.main - INFO - lottery_num: 0
+2018-11-09 13:04:16,686 - append_predict_tx_fenfen.main - ERROR - wait kaijiang. continue....
+2018-11-09 13:04:18,266 - append_predict_tx_fenfen.spider_pk10 - ERROR - spider pay interface faild! please exit process......  over purchase!!!

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+<!--{% for loty in evaluations %}-->
+    <!--<table>-->
+        <!--<tr>-->
+            <!--<td>{{ loty.prob_range }}</td>-->
+            <!--<td>{{ loty.prob_rule }}</td>-->
+            <!--<td>{{ loty.prob_match }}</td>-->
+            <!--<td>{{ loty.prob_nomatch }}</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+<!--{% endfor %}-->
+{#<ul class="nav nav-tabs">#}
+{#				<li >#}
+{#					<a rel="nofollow" href="/auto_main/">自动访问页面</a>#}
+{#				</li>#}
+{#				<li class="active">#}
+{#					<a rel="nofollow" href="/auto_list/">财务统计页面</a>#}
+{#				</li>#}
+{#</ul>#}
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h4 align="center">
+				预测推算
+			</h4>
+			<div class="row clearfix">
+				<div class="col-md-10 column">
+					<h5 align="center" color="red">
+						预测报表
+					</h5>
+					<table class="table">
+						<thead>
+								<tr>
+                                    <th>
+										日期
+									</th>
+                                    <th>
+										时间
+									</th>
+									<th>
+										期数
+									</th>
+									<th>
+										开奖号码
+									</th>
+									<th>
+										预测号码
+									</th>
+                                    <th>
+										每个名次
+									</th>
+
+                                    <th>
+                                        下注倍数
+                                    </th>
+
+									<th>
+										总购买
+									</th>
+									<th>
+										命中
+									</th>
+									<th>
+										命中率
+									</th>
+
+									<th>
+										每注金额
+									</th>
+
+                                    <th>
+										下注金额
+									</th>
+                                    <th>
+										盈利
+									</th>
+									<th>
+										是否购买
+									</th>
+
+                                    <th>
+										购买名次
+									</th>
+								</tr>
+						</thead>
+
+					</table>
+					<div style="overflow-x: auto; overflow-y: auto; height: 400px; width:950px;">
+						<!--<table class="table table-hover table-bordered table-striped">-->
+						<table  class="table table-bordered scrolltable">
+
+							<tbody>
+							{% for prob in obj_pro_predict %}
+								<tr class="success">
+                                    <td>
+										{{prob.kill_predict_date}}
+									</td>
+                                    <td>
+										{{prob.kill_predict_time}}
+									</td>
+									<td>
+										{{prob.lottery_id}}
+									</td>
+									<td>
+										{{prob.lottery_number}}
+									</td>
+									<td>
+										{{prob.kill_predict_number_desc}}
+									</td>
+
+                                    <td>
+										{{prob.percent_all_list_desc}}
+									</td>
+
+                                    <td>
+										{{prob.predict_number_all}}
+									</td>
+
+									<td>
+										{{prob.predict_total}}
+									</td>
+									<td>
+										{{prob.target_total}}
+									</td>
+									<td>
+										{{prob.predict_accuracy}}
+									</td>
+									<td>
+										{{prob.xiazhu_money}}
+									</td>
+
+                                    <td>
+										{{prob.input_money}}
+									</td>
+									<td>
+										{{prob.gain_money}}
+									</td>
+									<td>
+										{{prob.is_xiazhu}}
+									</td>
+                                    <td>
+										{{prob.xiazhu_nums}}
+									</td>
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+
+                    <table class="table" width=100%>
+						<thead>
+								<tr>
+									<th>
+										日期
+									</th>
+                                    <th>
+										时间段
+									</th>
+									<th>
+										总购买
+									</th>
+                                    <th>
+										总命中
+									</th>
+									<th>
+										总命中率
+									</th>
+
+									<th>
+										下注总金额
+									</th>
+									<th>
+										总盈利
+									</th>
+
+
+								</tr>
+						</thead>
+
+					</table>
+                    <div style="overflow-x: auto; overflow-y: auto; height: 300px; width:950px;">
+						<!--<table class="table table-hover table-bordered table-striped">-->
+						<table  class="table table-bordered scrolltable">
+
+							<tbody>
+							{% for prob_total in obj_pro_predict_total %}
+								<tr class="success">
+                                    <td>
+										{{prob_total.kill_predict_date}}
+									</td>
+                                    <td>
+                                        {{prob_total.predict_column_desc}}
+                                    </td>
+									<td>
+										{{prob_total.predict_total}}
+									</td>
+                                    <td>
+										{{prob_total.target_total}}
+									</td>
+									<td>
+										{{prob_total.predict_accuracy}}
+									</td>
+
+									<td>
+										{{prob_total.xiazhu_all_money}}
+									</td>
+
+
+									<td>
+										{{prob_total.gain_all_money}}
+									</td>
+
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-2 column">
+					<h5 align="center">
+						报表日期
+					</h5>
+                    <div style="overflow-x: auto; overflow-y: auto; height: 300px; width:200px;">
+					    <table  class="table">
+
+						<tbody>
+                        {% for loty in lottery %}
+
+							<tr class="active">
+								<td width="150px">
+									{{ loty.lottery_time }}
+								</td>
+								<td width="50px">
+									{{ loty.lottery_id }}
+								</td>
+								<td width="150px">
+									{{ loty.lottery_number }}
+								</td>
+							</tr>
+                        {% endfor %}
+
+                            <form action="/append_control_predict_report/" method="post" id="user_form">
+{#                <table class="table ">#}
+{#                    <tr>#}
+{#                        <td>#}
+{#                            日期选择：<input type="date" id="in_date_id" name="in_date" value="{{ p_date }}" />#}
+{#                        </td>#}
+{#                    </tr>#}
+{##}
+{#                </table>#}
+                    </form>
+{#                <table class="table">#}
+{#                    <th>#}
+{#                        <td>#}
+{#                            <button onclick="judgeevaluation()"  name="ABC" value="start">查询</button>#}
+{#                        </td>#}
+{#                    </th>#}
+{#                </table>#}
+
+						</tbody>
+					</table>
+                    </div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+<script>
+function judgeevaluation()
+{
+
+    in_date = document.getElementById('in_date_id').value;
+
+    if (in_date){
+         document.getElementById('user_form').submit();
+    }
+    else{
+        alert('请输入完整信息！');
+    }
+
+}
+
+</script>

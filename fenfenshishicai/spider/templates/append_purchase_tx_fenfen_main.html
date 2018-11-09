@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+<!--{% for loty in evaluations %}-->
+    <!--<table>-->
+        <!--<tr>-->
+            <!--<td>{{ loty.prob_range }}</td>-->
+            <!--<td>{{ loty.prob_rule }}</td>-->
+            <!--<td>{{ loty.prob_match }}</td>-->
+            <!--<td>{{ loty.prob_nomatch }}</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+<!--{% endfor %}-->
+<ul class="nav nav-tabs">
+{#				<li class="active">#}
+{#					<a rel="nofollow" href="/auto_admin/">自动访问页面</a>#}
+{#				</li>#}
+				<!--<li >-->
+					<!--<a rel="nofollow" href="/auto_list/">统计页面</a>-->
+				<!--</li>-->
+			</ul>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h5 align="center">
+				华宇 腾讯-分分时时彩自动化购买
+			</h5>
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+
+                <form action="/index/" method="post" id="user_form">
+                <table class="table ">
+                    <tr>
+{#                        <td>#}
+{#                            下注本金(正数)：<input type="number" id="in_monery_id" name="in_monery" value="{{ p_monery }}">#}
+{#                        </td>#}
+                        <td>
+                            下注金额(6期)：<input type="text" id="in_monery_id" name="in_monery" value="{{ p_monery }}">
+                        </td>
+
+                        <!--<td>
+                            规则器选择(1-2)：<input type="number" id="in_rule_id" name="in_rule" value="{{ p_rule }}">
+                        </td>-->
+                    </tr>
+
+                </table>
+                    <table class="table">
+                        <!--<tr>
+                        <td>
+                            1 杀号预测<br>
+                            上限：<input type="number" id="in_upper_monery_id_1" name="in_upper_monery_1" value="{{ p_upper_monery_1 }}"><br>
+                            下限：<input type="number" id="in_lower_monery_id_1" name="in_lower_monery_1" value="{{ p_lower_monery_1 }}">
+                        </td>
+                        </tr>-->
+
+                        <!--<tr style="color: red">
+                            <td>
+                                注：规则选择器为1-2，1为正常预测购买，2为取1的对立的号码购买。
+                            </td>
+                            <td>
+                                上下限位每个规则对应的封顶和最低值，上限为正数，下限为负数，上下限同时为0表示购买该规则
+                            </td>
+
+                        </tr>-->
+
+                    </table>
+                </form>
+
+				</div>
+				<div class="col-md-6 column">
+					<h5 align="center">
+						自动化访问
+					</h5>
+                    <table style="BORDER-COLLAPSE: collapse" cellSpacing=1 cellPadding=6 width="100%" height=273 class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th>
+									用户名
+								</th>
+								<th>
+									采集状态
+								</th>
+								<th>
+									操作
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+
+                            {% for user in prob_user_list %}
+                                <tr class="success">
+                                    <td>
+                                        {{ user.user_name }}
+                                    </td>
+                                    <td>
+                                        {% if user.user_status %}
+                                            <p>正在采集</p>
+                                        {% else %}
+                                            <p>待采集 </p>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if user.user_status %}
+                                                <button type="button" class="btn btn-default btn-danger " onclick="stop_thread('{{ user.user_name }}')">停止</button>
+                                        {% else %}
+                                                <button type="button" class="btn btn-default btn-success" onclick="start_thread( '{{ user.user_name }}' )">启动</button>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+<script>
+
+function start_thread(user_name){
+
+    in_monery_str = document.getElementById('in_monery_id').value;
+    //in_rule = document.getElementById('in_rule_id').value;
+    //in_upper_monery_1 = document.getElementById('in_upper_monery_id_1').value;
+    //in_lower_monery_1 = document.getElementById('in_lower_monery_id_1').value;
+
+
+    in_rule_list = in_monery_str.split(",");
+    var commit_flag = false;
+
+    if (in_rule_list.length == 6){
+        commit_flag = true;
+    }
+    if (in_rule_list.length == 1){
+        if((in_rule_list[0]).length > 1){
+            commit_flag = false;
+        }
+    }else{
+        for (x in in_rule_list)
+        {
+            result = parseInt(in_rule_list[x]);
+            if (result){
+
+            }else{
+                commit_flag = false;
+            }
+        }
+    }
+
+
+    var in_rule = 1;
+    var in_upper_monery_1 = 1000;
+    var in_lower_monery_1 = -1000;
+
+    if(!in_upper_monery_1){
+        in_upper_monery_1 = 0
+    }
+    if(!in_lower_monery_1){
+        in_lower_monery_1 = 0
+    }
+
+    if (commit_flag){
+
+        post_form("/append_purchase_control/",{"user_name":user_name,"control":'start',
+                        "auto_in_money":in_rule_list, "in_rule":in_rule,
+                    "in_upper_monery_1":in_upper_monery_1, "in_lower_monery_1":in_lower_monery_1});
+    }
+    else{
+        alert('请输入正确信息！');
+    }
+
+}
+
+
+function stop_thread(user_name){
+
+    var confirmMsg = confirm("确定停止?");
+    in_monery = 1;
+    //in_rule = document.getElementById('in_rule_id').value;
+    //in_upper_monery_1 = document.getElementById('in_upper_monery_id_1').value;
+    //in_lower_monery_1 = document.getElementById('in_lower_monery_id_1').value;
+
+    in_rule = 1;
+    in_upper_monery_1 = 1000;
+    in_lower_monery_1 = -1000;
+
+
+
+    if(!in_upper_monery_1){
+        in_upper_monery_1 = 0
+    }
+    if(!in_lower_monery_1){
+        in_lower_monery_1 = 0
+    }
+
+
+    in_monery_str = document.getElementById('in_monery_id').value;
+    in_rule_list = in_monery_str.split(",");
+
+    if ( in_rule_list && in_rule){
+            if(in_monery > 0){
+                if(in_rule>0 && in_rule<=2){
+
+                    if (confirmMsg) {
+{#                        post_form("/control_probuser_thread/",{"user_name":user_name,"control":'stop', "in_rule_list":in_rule_list,"auto_in_money":in_monery });#}
+                        post_form("/append_purchase_control/",{"user_name":user_name,"control":'stop',
+                            "auto_in_money":in_rule_list, "in_rule":in_rule,
+                        "in_upper_monery_1":in_upper_monery_1, "in_lower_monery_1":in_lower_monery_1});
+                    } else {
+                        return false;
+                    }
+                }
+                else{
+                    alert('规则选择为1-2！');
+                }
+
+            }else{
+                alert('下注本金为正数！');
+            }
+    }
+    else{
+        alert('请输入完整信息！');
+    }
+
+}
+
+
+function post_form(URL, PARAMS) {
+    console.log(PARAMS);
+    var temp = document.createElement("form");
+    temp.action = URL;
+    temp.method = "post";
+    temp.style.display = "none";
+    for (var x in PARAMS) {
+        var opt = document.createElement("input");
+        opt.name = x;
+        opt.value = PARAMS[x];
+        temp.appendChild(opt);
+    }
+    console.log(temp);
+    document.body.appendChild(temp);
+    temp.submit();
+    return temp;
+}
+</script>
