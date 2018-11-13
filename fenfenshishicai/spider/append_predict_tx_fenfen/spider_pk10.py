@@ -5,6 +5,9 @@ import urllib2
 import time
 import simplejson
 from append_purchase_tx_fenfen.models import PredictLottery
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 from log99.pk_log import PkLog,GetDate
 from bs4 import BeautifulSoup
@@ -25,10 +28,17 @@ def get_html_result(interval):
     while(flag):
         try:
             predict_driver.get('http://pay4.hbcchy.com/lotterytrend/chart/16')
-                # page = urllib2.urlopen(url)
             time.sleep(3)
             html = predict_driver.page_source
-            #html_json = simplejson.loads(html)
+            # try:
+            #     WebDriverWait(predict_driver, 15).until(EC.presence_of_element_located((By.CLASS_NAME , "lottery-numbers")))
+            #     pk_logger("start get url ok")
+            #     time.sleep(1)
+            #     html = predict_driver.page_source
+            # except:
+            #     print "not found issue-numbers"
+            #     time.sleep(3)
+            #     html = ''
             return html
         except:
             if count > 2:
@@ -58,6 +68,8 @@ def load_lottery_predict(html_json):
     soup = BeautifulSoup(html_json)
     index = 0
     exit_flag = False
+    time.sleep(3)
+    # print "soup",soup.find(id='J-chart-content')
     for resultTable in soup.find(id='J-chart-content').find_all('tr'):
         #print "resultTable",resultTable
         ids = resultTable.find(class_='issue-numbers')
@@ -66,6 +78,7 @@ def load_lottery_predict(html_json):
         lottery_id = date_ids.split('-')[1]
         # print "lottery_date:",lottery_date
         # print "lottery_id:",lottery_id
+        # time.sleep(1)
         lottery_numbers = resultTable.find(class_='lottery-numbers')
         lottery_numbers = unicode(lottery_numbers.string).encode('utf-8').strip()
         lottery_number = ''
@@ -73,52 +86,11 @@ def load_lottery_predict(html_json):
             lottery_number = lottery_number + i + ','
         # lottery_numbers[0]
         lottery_number = lottery_number[:-1]
-        # print "lottery_number",lottery_number
+        # print "lottery_id, last_lottery_id",int(lottery_id),"  ", int(last_lottery_id)
         if int(last_lottery_id) < int(lottery_id):
             p = PredictLottery(lottery_month=lottery_date[0:6], lottery_date =lottery_date, lottery_time = lottery_id, lottery_id = lottery_id, lottery_number = lottery_number)
             p.save()
-
-        # if index == 1:
-        #     tbodys = resultTable.find_all('tbody')
-        #     for tbody in tbodys:
-        #         for tr in tbody.find_all('tr'):
-        #             td_index = 0
-        #             for td in tr.find_all('td'):
-        #                 if td_index== 0:
-        #                     lottery_id = unicode(td.string).encode('utf-8').strip()
-        #                     #pk_logger.info("lottery_id-lottery_id:%s",lottery_id)
-        #                     lottery_month = lottery_id[0:6]
-        #                     lottery_date = lottery_id[0:8]
-        #                 if td_index == 1:
-        #                     lottery_numbers = ''
-        #                     base_number = ['0','1','2','3','4','5','6','7','8','9']
-        #                     for span in td.find_all('span'):
-        #                         lottery_number = unicode(span.string).encode('utf-8').strip()
-        #                         #print "lottery_number....:",lottery_number
-        #                         if lottery_number in base_number:
-        #                             lottery_numbers = lottery_numbers + lottery_number + ','
-        #                         else:
-        #                             exit_flag = True
-        #                             break
-        #                     lottery_numbers = lottery_numbers[:-1]
-        #                     #pk_logger.info("lottery_numbers....:%s",lottery_numbers)
-        #                     if lottery_numbers == '':
-        #                         #print "pass....."
-        #                         pass
-        #                     else:
-        #                         #pk_logger.info("lottery_id-lottery_id222:%s",lottery_id)
-        #                         if int(last_lottery_id) < int(lottery_id):
-        #                             #time.sleep(1)
-        #                             p = PredictLottery(lottery_month=lottery_month, lottery_date =lottery_date, lottery_time = lottery_id, lottery_id = lottery_id, lottery_number = lottery_numbers)
-        #                             p.save()
-        #                 td_index = td_index + 1
-        #             if(exit_flag):
-        #                 break
-        #         if(exit_flag):
-        #             break
-        #     if(exit_flag):
-        #         break
-        # index = index + 1
+            pk_logger.info("lottery id, lottery num: %s, %s",lottery_id, lottery_number)
     return lottery_id
 
 

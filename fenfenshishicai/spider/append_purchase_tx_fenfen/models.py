@@ -37,6 +37,16 @@ class KillPredict(models.Model):
     #总投入
     input_money = models.IntegerField(null=True, blank=True)
 
+    #前二命中hit
+    front_hit =  models.IntegerField(null=True, blank=True)
+    #后二命中hit
+    back_hit =  models.IntegerField(null=True, blank=True)
+
+    #前二倍数
+    front_multiple =  models.IntegerField(null=True, blank=True)
+    #后二倍数
+    back_multiple =  models.IntegerField(null=True, blank=True)
+
 #汇总记录
 class KillPredictTotal(models.Model):
     kill_predict_date = models.CharField(max_length=100)

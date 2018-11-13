@@ -10,13 +10,15 @@ from django.shortcuts import render_to_response
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select
 
 from append_purchase_tx_fenfen.models import ProbUser
 from append_purchase_tx_fenfen.client_thread  import ThreadControl
 from append_purchase_tx_fenfen.purchase_driver import get_driver
 from append_purchase_tx_fenfen.models import KillPredict
 
-from log99.pk_log import PkLog,GetDate
+
+from log99.pk_log import PkLog,GetDate,GetRule
 
 pk_logger = PkLog('append_purchase_tx_fenfen.purchase_client_main').log()
 
@@ -48,24 +50,26 @@ class SingleDriverMultiple(Singleton):
 def control_probuser_thread(request):
     user_name = request.POST['user_name']
     password = ProbUser.objects.get(user_name=user_name).user_password;
-    #print "password:",password
     pk_logger.info("user_name:%s",user_name)
     pk_logger.info("password:%s",password)
     control = request.POST['control']
 
-    money_list = request.POST['auto_in_money']
+    #money_list = request.POST['auto_in_money']
     rule_id = request.POST['in_rule']
+    in_money = request.POST['in_money']
 
     info_dict = {}
     info_dict["user_name"] = user_name
     info_dict["password"] = password
-    info_dict["money_list"] = money_list.split(',')
-    info_dict["rule_id"] = int(rule_id)
+    #info_dict["money_list"] = money_list.split(',')
 
     info_dict["upper_money"] = int(request.POST['in_upper_monery_1'])
     info_dict["lower_money"] = int(request.POST['in_lower_monery_1'])
 
-    pk_logger.info("init money_list:%s",info_dict["money_list"])
+    info_dict["in_money"] = int(in_money)
+    info_dict["rule_id"] = int(rule_id)
+
+    #pk_logger.info("init money_list:%s",info_dict["money_list"])
     #显示活跃状态
     prob_user = ProbUser.objects.get(user_name=user_name)
     if control == 'start':
@@ -115,7 +119,7 @@ def control_probuser_thread(request):
             #print "not thread alive"
             pk_logger.warn("not thread alive")
     prob_user_list =  ProbUser.objects.all()
-    return render_to_response('append_purchase_tx_fenfen_main.html',{"prob_user_list":prob_user_list, "p_rule":request.POST['in_rule'], "p_monery":money_list,
+    return render_to_response('append_purchase_tx_fenfen_main.html',{"prob_user_list":prob_user_list, "p_rule":request.POST['in_rule'], "p_monery":in_money,
                                                 "p_upper_monery_1":request.POST['in_upper_monery_1'], "p_lower_monery_1":request.POST['in_lower_monery_1']})
     # return render_to_response('qzone_info.html',{"thread_name":th_name, "control":control, "thread_list":thread_list,"info_active":info_active})
 
@@ -162,37 +166,146 @@ def get_predict_kill_and_save(interval):
                     pk_logger.info("last_id,predict_id:%d, %d", last_id, predict_id)
                     #判断是否成功拿到predict
                     if predict_id > last_id:
-                        #判断是否是最新一期并且之前为购买
+                        #判断是否是最新一期并且之前未购买，防止重复购买
                         current_predicts = KillPredict.objects.filter(lottery_id = predict_id)
                         current_is_xiazhu = 0
                         for current_predict in current_predicts:
                             current_is_xiazhu = current_predict.is_xiazhu
-                        # save_predict_time = datetime.datetime.strptime(result_info['save_predict_time'],'%Y%m%d %H:%M:%S')
-                        # current_time = datetime.datetime.now()
                         print "result_info:",result_info
                         print "current_predicts.is_xiazhu:",current_is_xiazhu
-                        # if (current_time - save_predict_time).seconds > 12000:
-                        #     pk_logger.info("unfounded new predict,purchase faild!")
-                        #     purchase_flag_confirm = False
                         pk_logger.info("current_is_xiazhu:%d", current_is_xiazhu)
                         if current_is_xiazhu == 0:
+                            #通过购买历史获取倍数
+                            current_date = GetDate().get_base_date()
+                            #killpredicts = KillPredict.objects.filter(kill_predict_date = current_date).order_by("-lottery_id")
+                            killpredicts = KillPredict.objects.filter(kill_predict_date = current_date, is_xiazhu = 1).order_by("-lottery_id")
+
+                            front_multiple = 1
+                            back_multiple = 1
+                            is_xiazhu_list = []
+                            front_multiple_list = []
+                            front_hit_list = []
+                            back_multiple_list = []
+                            back_hit_list = []
+
+                            purchase_rule_list = GetRule().get_purchase_multiple()
+                            # if interval["rule_id"] == 1:
+                            #     pk_logger.info("---------------rule 1")
+                            #     pk_logger.info("---------------front_hit_list:%s",front_hit_list)
+                            #     pk_logger.info("---------------front_multiple_list:%s",front_multiple_list)
+                            #
+                            #     for killpredict in killpredicts:
+                            #         front_multiple_list.append(killpredict.front_multiple)
+                            #         front_hit_list.append(killpredict.front_hit)
+                            #         is_xiazhu_list.append(killpredict.is_xiazhu)
+                            #
+                            #
+                            #     if len(front_hit_list) == 3:
+                            #         if front_hit_list[1] == 1:
+                            #             front_multiple = 1
+                            #         #上期未中，上上期中了，停止2期
+                            #         elif front_hit_list[2] == 1:
+                            #             front_multiple = 1
+                            #         else:
+                            #             front_multiple = 0
+                            #
+                            #     if len(front_hit_list) > 3:
+                            #         if front_hit_list[1] == 1:
+                            #             front_multiple = 1
+                            #         #上期未中，上上期中了，停止2期
+                            #         elif front_hit_list[2] == 1:
+                            #             front_multiple = 0
+                            #         #上期未中，上上期未中，上上上期中， 停止1期
+                            #         elif front_hit_list[3] == 1:
+                            #             front_multiple = 0
+                            #         #上期未中，上上期未中，上上上未期， 追加
+                            #         else:
+                            #             purchase_index = int(purchase_rule_list.index(front_multiple_list[3]))
+                            #             if purchase_index == len(purchase_rule_list) - 1:
+                            #                     front_multiple = 1
+                            #             else:
+                            #                 try:
+                            #                     front_multiple = purchase_rule_list[int(purchase_rule_list.index(front_multiple_list[3])) + 1]
+                            #                 except:
+                            #                     front_multiple = 1
+                            #
+                            #
+                            # else:
+                            #     pk_logger.info("---------------rule 2")
+                            #     for killpredict in killpredicts:
+                            #         back_multiple_list.append(killpredict.back_multiple)
+                            #         back_hit_list.append(killpredict.back_hit)
+                            #         is_xiazhu_list.append(killpredict.is_xiazhu)
+
+
+                            #获取下注倍数
+                            # index_predict_sort = 0
+                            # front_multiple = 1
+                            # pk_logger.info("---------------rule_id:%d",interval["rule_id"])
+                            # if interval["rule_id"] == 1:
+                            #     pk_logger.info("---------------rule 1")
+                            #     for killpredict in killpredicts:
+                            #         #预测一期除外
+                            #         if index_predict_sort == 1:
+                            #             #上一期命中，倍数为1
+                            #             if killpredict.front_hit == 1:
+                            #                 pk_logger.info("---------------last hit")
+                            #                 front_multiple = 1
+                            #                 break
+                            #         if index_predict_sort == 2:
+                            #             #上上一期命中，本期不买，倍数为0
+                            #             if killpredict.front_hit == 1:
+                            #                 pk_logger.info("---------------last last hit")
+                            #                 front_multiple = 0
+                            #                 break
+                            #         if index_predict_sort == 3:
+                            #             if killpredict.front_hit == 1:
+                            #                 purchase_rule_list = GetRule().get_purchase_multiple()
+                            #                 purchase_index = purchase_rule_list.index(int(killpredict.front_multiple))
+                            #                 pk_logger.info("---------------purchase_rule_list:%s",purchase_rule_list)
+                            #                 #越界初始化
+                            #                 if purchase_index == len(purchase_rule_list) - 1:
+                            #                     front_multiple = 1
+                            #                 else:
+                            #                     try:
+                            #                         pk_logger.info("---------------add increase,last purchase is:%d",killpredict.front_multiple)
+                            #                         front_multiple = purchase_rule_list[purchase_rule_list.index(int(killpredict.front_multiple)) + 1]
+                            #                     except:
+                            #                         pk_logger.info("not exists %d",int(killpredict.front_multiple))
+                            #                         front_multiple = 1
+                            #             else:
+                            #                 front_multiple = 1
+                            #             break
+                            #
+                            #         index_predict_sort = index_predict_sort + 1
+                            # else:
+                            #     pk_logger.info("---------------rule 2")
+
+                            pk_logger.info("last front_multiple:%s",front_multiple)
+                            index_predict_sort = 0
+                            back_multiple = 1
+
+
                             purchase_number_list = result_info['predict_number_list']
                             #获取投注倍数索引
-                            purchase_number_money_index = result_info['purchase_number_money_index']
+                            purchase_number_money_index = [int(front_multiple), 0, 0, 0, int(back_multiple)]
 
-                            money_list = interval['money_list']
-                            pk_logger.info("start purchase, xiazhu money:%s",money_list)
+                            in_money = interval['in_money']
+                            pk_logger.info("start purchase, xiazhu money:%s",in_money)
+                            rule_id = interval['rule_id']
                             #获取购买元素列表个数
-                            purchase_element_list,buy_money_list = get_xiazhu_message_cai99(purchase_number_list,purchase_number_money_index, money_list)
-                            if len(purchase_element_list) > 0:
+                            purchase_element_list,buy_money = get_xiazhu_message_cai99(purchase_number_list,purchase_number_money_index, in_money, rule_id)
+                            if len(purchase_element_list) > 0 and buy_money > 0:
                                 # 购买
-                                purchase_result = start_purchase(purchase_element_list, interval, buy_money_list)
+                                purchase_result = start_purchase(purchase_element_list, interval, buy_money)
                                 input_money = len(purchase_element_list) * 1
                                 if purchase_result:
                                     pk_logger.info("purchase sucess!, input money:%s",input_money)
                                     p = KillPredict.objects.get(lottery_id=predict_id)
                                     p.is_xiazhu = 1
                                     p.input_money = input_money
+                                    p.front_multiple = front_multiple
+                                    p.back_multiple = back_multiple
                                     p.save()
                                     pk_logger.info("save xiazhu args sucess!")
                                     purchase_driver = interval['purchase_driver']
@@ -221,7 +334,7 @@ def get_predict_kill_and_save(interval):
                                     pk_logger.info("purchase faild!")
                             else:
                                 #print 'no element in purchase_element_list '
-                                pk_logger.info("no element in purchase_element_list")
+                                pk_logger.info("no element in purchase_element_list  or stop purchase")
 
                             purchase_flag_confirm = False
                         else:
@@ -243,7 +356,7 @@ def get_predict_kill_and_save(interval):
 
 
 #购买
-def start_purchase(purchase_element_list, interval, buy_money_list):
+def start_purchase(purchase_element_list, interval, buy_money):
     #计算历史总盈利
     gain_all_money = 0
     # current_date = time.strftime('%Y%m%d',time.localtime(time.time()))
@@ -260,42 +373,39 @@ def start_purchase(purchase_element_list, interval, buy_money_list):
         interval['purchase_driver'] = reload_pk10_driver(interval['purchase_driver'], interval)
         purchase_driver = interval['purchase_driver']
 
-        #time.sleep(1)
-        purchase_driver.find_element_by_xpath('//*[@id="lt_cf_clear"]/a').click()
+        #设置倍数
+        purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/div[4]/div[5]/input').clear()
         time.sleep(1)
-        purchase_driver.find_element_by_xpath('/html/body/div[3]/div[2]/div/div/div/div/div[3]/button[2]').click()
+        print "clear money ok"
+
+        purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/div[4]/div[5]/input').send_keys(str(buy_money))
         time.sleep(1)
-        print "delete ok"
+        print "set money ok"
 
         try:
-            money_index = 0
+            pk_logger.info("current xaizhu money:%d",int(buy_money))
             for purchase_element in purchase_element_list:
 
                 pk_logger.info("start purchase purchase_element:%s",purchase_element)
-                pk_logger.info("current xaizhu money:%d",int(buy_money_list[money_index]))
-                sub_element = purchase_driver.find_element_by_xpath(purchase_element)
-                #追加下注
-                sub_element.click()
+                purchase_driver.find_element_by_xpath(purchase_element).click()
                 time.sleep(1)
-                set_money_element = purchase_driver.find_element_by_xpath('//*[@id="lt_sel_times"]')
-                set_money_element.send_keys(str(int(buy_money_list[money_index])))
-                time.sleep(1)
-                #添加注单
-                confirm_button = purchase_driver.find_element_by_xpath('//*[@id="lt_sel_insert"]')
-                confirm_button.click()
-                time.sleep(1)
-                money_index = money_index + 1
 
-            #投注
-            commit_button = purchase_driver.find_element_by_xpath('//*[@id="lt_buy"]')
-            commit_button.click()
+
+            #添加到投注
+            purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/div[4]/div[5]/span/button[1]').click()
+            print "add touzhu "
             time.sleep(1)
-            pk_logger.info("commit ok")
-            #确定
-            submit_button =  purchase_driver.find_element_by_xpath('/html/body/div[3]/div[2]/div/div/div/div/div[3]/button[2]')
-            #submit_button = purchase_driver.find_element_by_xpath('//*[@id="myLayer_1"]/tbody/tr/td/div[3]/a[2]')
-            submit_button.click()
-            time.sleep(1)
+
+            #确认投注
+            purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/div[4]/div[6]/div[2]/span[1]/button').click()
+            print "add confirm"
+            # print purchase_driver.page_source
+            time.sleep(3)
+
+            #提交
+            purchase_driver.find_element_by_class_name('ngdialog-buttons').find_element_by_tag_name('button').click()
+            print "purchase ok"
+            time.sleep(3)
             pk_logger.info("purchase ok")
             return True
         except:
@@ -307,47 +417,28 @@ def start_purchase(purchase_element_list, interval, buy_money_list):
 
 
 #根据预测list转换成要购买的元素
-def get_xiazhu_message_cai99(purchase_number_str,purchase_number_money_index,input_xiazhu_money_list):
+def get_xiazhu_message_cai99(purchase_number_str,purchase_number_money_index,xiazhu_money, rule_id):
     buy_element_list = []
-    buy_money_list = []
+    buy_money = xiazhu_money
+
     # purchase_number_str = '0,9|2|4|7,9|2|10|6,3|4|5|6|7|9,8|1|2|10,1|2|5|7|8|9,1|3|6|8|9|10'
-    # purchase_number_list = purchase_number_str.split(',')
 
-    #分解购买单双号
-    print "purchase_number_list",purchase_number_str
-    purchase_number_list = purchase_number_str.replace(" ","").replace('[',"").replace(']',"").split(',')
+    purchase_number_list = purchase_number_str.split(',')
     print "purchase_number_list",purchase_number_list
+    if rule_id == 1:
+        buy_money = xiazhu_money * purchase_number_money_index[0]
+        temp_list = purchase_number_list[0].split('|')
+        for temp in temp_list:
+            xpath = '/html/body/div/div[2]/div[4]/div/div[4]/div[2]/div/p[1]/button[' + str(int(temp) + 1) + ']'
+            buy_element_list.append(xpath)
+    if rule_id == 2:
+        buy_money = xiazhu_money * purchase_number_money_index[-1]
+        temp_list = purchase_number_list[-1].split('|')
+        for temp in temp_list:
+            xpath = '/html/body/div/div[2]/div[4]/div/div[4]/div[2]/div/p[1]/button[' + str(int(temp) + 1) + ']'
+            buy_element_list.append(xpath)
 
-    #分解下注索引
-    print "purchase_number_money_index",purchase_number_money_index
-    purchase_number_money_list = purchase_number_money_index.replace(" ","").replace('[',"").replace(']',"").split(',')
-    print "purchase_number_money_list:",purchase_number_money_list
-    print "input_xiazhu_money_list:",input_xiazhu_money_list
-
-    for index in range(len(purchase_number_list)):
-        if purchase_number_list[index] == '-1':
-            pass
-        else:
-            buy_money_list.append(input_xiazhu_money_list[int(purchase_number_money_list[index])])
-            #万位
-            #//*[@id="lt_selector"]/div[1]/div/div[1]/div[3]/ul/li[5]   奇
-            #//*[@id="lt_selector"]/div[1]/div/div[1]/div[3]/ul/li[6]   偶
-
-            #千位
-            #//*[@id="lt_selector"]/div[1]/div/div[2]/div[3]/ul/li[5]
-            #//*[@id="lt_selector"]/div[1]/div/div[2]/div[3]/ul/li[6]
-            if purchase_number_list[index] == '1':
-
-                #xpath = '//*[@id="itmStakeInput2' + column + '1' + value + '"]'
-                xpath = '//*[@id="lt_selector"]/div[1]/div/div[' + str(index+1) + ']/div[3]/ul/li[5]'
-                #print "xpath:",xpath
-                buy_element_list.append(xpath)
-            if purchase_number_list[index] == '0':
-                xpath = '//*[@id="lt_selector"]/div[1]/div/div[' + str(index+1) + ']/div[3]/ul/li[6]'
-                #print "xpath:",xpath
-                buy_element_list.append(xpath)
-                #buy_element_list.append('//*[@id="a_B' + str(index+1) + '_' + str(purchase_number) + '"]/input')
-    return buy_element_list,buy_money_list
+    return buy_element_list,buy_money
 
 
 
@@ -379,21 +470,46 @@ def reload_pk10_driver(purchase_driver,interval):
 
     #1-10
     if 1:
-        #purchase_url = purchase_driver.current_url
-        #pk_logger.info("purchase_url:%s",purchase_url)
-        purchase_driver.get('https://28c99.com/bettingHall/betScreen?lotId=54&pid=507')
-        time.sleep(1)
+        while(1):
+            #刷新开奖
+            try:
+                purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[3]/div/div/div[4]/p[1]/label/i').click()
+                print "flush ok"
+                time.sleep(5)
+                avolid = int(str(purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[3]/div/div/div[3]/p[2]').text).split(':')[-1])
+                if avolid > 20:
+                    break
+                else:
+                    print "time is unenough"
+                    time.sleep(3)
+            except:
+                print "wait flush"
+                time.sleep(3)
         try:
-            #定位胆
-            element_1_10 = purchase_driver.find_element_by_xpath('//*[@id="tabbar-div-s2"]/span[7]/span')
-            element_1_10.click()
+            if interval["rule_id"] == 1:
+                #后二
+                purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/div[1]/a[6]').click()
+                print "back 2 ok"
+                time.sleep(1)
+            else:
+                purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/div[1]/a[7]').click()
+                print "forhead 2 ok"
+                time.sleep(1)
+
+            #组选
+
+            purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/div[2]/p[2]/button[1]').click()
+            print "zuxuan ok "
+            time.sleep(1)
+
+            #选择单位
+
+            Select(purchase_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/div[4]/div[5]/select')).select_by_index(3)
+            print "danwei ok"
+            time.sleep(1)
+
         except:
-            pk_logger.warn("not found dinwgeidan.")
-        try:
-            element = WebDriverWait(purchase_driver, 15).until(EC.presence_of_element_located((By.ID , "lt_selector")))
-            pk_logger.info("find inw_1_1 ok")
-        except:
-            pk_logger.error("find inw_1_1 error,exit")
+            pk_logger.error("flush error,exit")
             time.sleep(10)
             reload_pk10_driver(purchase_driver, interval)
         #interval['user_name'],interval['password']

@@ -13,6 +13,10 @@ class GetDate:
         return time.strftime('%Y%m%d',time.localtime(time.time() - 6*3600))
 
 
+class GetRule:
+    def get_purchase_multiple(self):
+        return [1,3,5,7,9,11]
+
 # 创建一个logger
 class PkLog:
     pk_name = ''

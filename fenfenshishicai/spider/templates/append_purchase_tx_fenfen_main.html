@@ -41,13 +41,17 @@
 {#                        <td>#}
 {#                            下注本金(正数)：<input type="number" id="in_monery_id" name="in_monery" value="{{ p_monery }}">#}
 {#                        </td>#}
+{#                        <td>#}
+{#                            下注金额(6期)：<input type="text" id="in_monery_id" name="in_monery" value="{{ p_monery }}">#}
+{#                        </td>#}
+
                         <td>
-                            下注金额(6期)：<input type="text" id="in_monery_id" name="in_monery" value="{{ p_monery }}">
+                            下注金额：<input type="text" id="in_monery_id_single" name="in_monery" value="{{ p_monery }}">
                         </td>
 
-                        <!--<td>
-                            规则器选择(1-2)：<input type="number" id="in_rule_id" name="in_rule" value="{{ p_rule }}">
-                        </td>-->
+                        <td>
+                            规则器选择(1前二-2后二)：<input type="number" id="in_rule_id" name="in_rule" value="{{ p_rule }}">
+                        </td>
                     </tr>
 
                 </table>
@@ -130,36 +134,10 @@
 
 function start_thread(user_name){
 
-    in_monery_str = document.getElementById('in_monery_id').value;
-    //in_rule = document.getElementById('in_rule_id').value;
+    in_money = document.getElementById('in_monery_id_single').value;
+    in_rule = document.getElementById('in_rule_id').value;
     //in_upper_monery_1 = document.getElementById('in_upper_monery_id_1').value;
     //in_lower_monery_1 = document.getElementById('in_lower_monery_id_1').value;
-
-
-    in_rule_list = in_monery_str.split(",");
-    var commit_flag = false;
-
-    if (in_rule_list.length == 6){
-        commit_flag = true;
-    }
-    if (in_rule_list.length == 1){
-        if((in_rule_list[0]).length > 1){
-            commit_flag = false;
-        }
-    }else{
-        for (x in in_rule_list)
-        {
-            result = parseInt(in_rule_list[x]);
-            if (result){
-
-            }else{
-                commit_flag = false;
-            }
-        }
-    }
-
-
-    var in_rule = 1;
     var in_upper_monery_1 = 1000;
     var in_lower_monery_1 = -1000;
 
@@ -170,14 +148,18 @@ function start_thread(user_name){
         in_lower_monery_1 = 0
     }
 
-    if (commit_flag){
-
-        post_form("/append_purchase_control/",{"user_name":user_name,"control":'start',
-                        "auto_in_money":in_rule_list, "in_rule":in_rule,
-                    "in_upper_monery_1":in_upper_monery_1, "in_lower_monery_1":in_lower_monery_1});
+    if (in_money > 0) {
+        if (in_rule > 0 && in_rule <= 2) {
+            post_form("/append_purchase_control/", {"user_name": user_name, "control": 'start',
+                "in_money": in_money, "in_rule": in_rule,
+                "in_upper_monery_1": in_upper_monery_1, "in_lower_monery_1": in_lower_monery_1});
+        }
+        else{
+            alert('请输入正确规则！');
+        }
     }
     else{
-        alert('请输入正确信息！');
+        alert('请输入正确金额！');
     }
 
 }
@@ -186,16 +168,12 @@ function start_thread(user_name){
 function stop_thread(user_name){
 
     var confirmMsg = confirm("确定停止?");
-    in_monery = 1;
-    //in_rule = document.getElementById('in_rule_id').value;
+    in_rule = document.getElementById('in_rule_id').value;
     //in_upper_monery_1 = document.getElementById('in_upper_monery_id_1').value;
     //in_lower_monery_1 = document.getElementById('in_lower_monery_id_1').value;
 
-    in_rule = 1;
     in_upper_monery_1 = 1000;
     in_lower_monery_1 = -1000;
-
-
 
     if(!in_upper_monery_1){
         in_upper_monery_1 = 0
@@ -205,17 +183,14 @@ function stop_thread(user_name){
     }
 
 
-    in_monery_str = document.getElementById('in_monery_id').value;
-    in_rule_list = in_monery_str.split(",");
+    in_monery = document.getElementById('in_monery_id_single').value;
 
-    if ( in_rule_list && in_rule){
-            if(in_monery > 0){
-                if(in_rule>0 && in_rule<=2){
-
+    if(in_monery > 0){
+         if(in_rule>0 && in_rule<=2){
                     if (confirmMsg) {
 {#                        post_form("/control_probuser_thread/",{"user_name":user_name,"control":'stop', "in_rule_list":in_rule_list,"auto_in_money":in_monery });#}
                         post_form("/append_purchase_control/",{"user_name":user_name,"control":'stop',
-                            "auto_in_money":in_rule_list, "in_rule":in_rule,
+                            "in_money":in_money, "in_rule":in_rule,
                         "in_upper_monery_1":in_upper_monery_1, "in_lower_monery_1":in_lower_monery_1});
                     } else {
                         return false;
@@ -228,11 +203,6 @@ function stop_thread(user_name){
             }else{
                 alert('下注本金为正数！');
             }
-    }
-    else{
-        alert('请输入完整信息！');
-    }
-
 }
 
 

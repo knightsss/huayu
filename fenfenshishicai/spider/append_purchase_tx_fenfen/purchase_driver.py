@@ -12,18 +12,19 @@ pk_logger = PkLog('append_purchase_tx_fenfen.purchase_driver').log()
 
 def get_driver(username,password):
 
-    driver = webdriver.Firefox(executable_path = './log99/geckodriver.exe')
+    # driver = webdriver.Firefox(executable_path = './log99/geckodriver.exe')
+    chromedriver = "E:\\python\\webdriver\\chrome\\chromedriver37.exe"
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option("excludeSwitches",["ignore-certificate-errors"])
+    driver = webdriver.Chrome(executable_path=chromedriver,chrome_options=options )
 
-    driver.get("https://28c99.com/home")
+    driver.get("https://x2.yeuss.com/#/")
 
     driver.maximize_window();
     time.sleep(2)
 
-    user_elem = driver.find_element_by_xpath("/html/body/section/div[2]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/div/input")
-    user_elem.send_keys(username)
-
-    pwd_elem = driver.find_element_by_xpath("/html/body/section/div[2]/div/div/div/div[2]/div/div[1]/form/div[1]/div[2]/div/input")
-    pwd_elem.send_keys(password)
+    #输入用户名
+    driver.find_element_by_class_name('loginTabContent').find_element_by_tag_name('input').send_keys(username)
 
     code_flag = True
     while(code_flag):
@@ -32,8 +33,16 @@ def get_driver(username,password):
             #密码输入完毕后提供10s时间输入验证码
             time.sleep(10)
             #提交按钮
-            driver.find_element_by_xpath("/html/body/section/div[2]/div/div/div/div[2]/div/div[1]/form/div[1]/div[4]/div/div").click()
+            #登陆1
+            driver.find_element_by_class_name('loginTabContent').find_element_by_tag_name('button').click()
             time.sleep(3)
+
+            #输入密码
+            driver.find_element_by_xpath('/html/body/div/div/div[1]/div[2]/ui-view/form/div/div[2]/div/p[2]/input').send_keys(password)
+
+            #登陆2
+            driver.find_element_by_class_name('loginTabContent').find_element_by_tag_name('button').click()
+            time.sleep(5)
 
             pk_logger.info("login ok")
             code_flag = False
@@ -44,20 +53,23 @@ def get_driver(username,password):
             time.sleep(5)
 
             driver = webdriver.Firefox(executable_path = 'E:\\python\\webdriver\\firefox\\geckodriver.exe')
-            driver.get("https://28c99.com/home")
+            driver.get("https://x2.yeuss.com/#/")
             driver.maximize_window();
-            time.sleep(2)
 
-            user_elem = driver.find_element_by_xpath("/html/body/section/div[2]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/div/input")
-            user_elem.send_keys(username)
-
-            pwd_elem = driver.find_element_by_xpath("/html/body/section/div[2]/div/div/div/div[2]/div/div[1]/form/div[1]/div[2]/div/input")
-            pwd_elem.send_keys(password)
+            #输入用户名
+            driver.find_element_by_class_name('loginTabContent').find_element_by_tag_name('input').send_keys('zhc133')
+            time.sleep(8)
 
             code_flag = True
 
+    #点击关闭提示框
+    driver.find_element_by_xpath('//*[@id="ngdialog1"]/div[2]/div[1]/button').click()
     time.sleep(2)
-    driver.get('https://28c99.com/bettingHall/betScreen?lotId=54&pid=507')
+
+    #腾讯分分时时彩
+    driver.find_element_by_xpath('/html/body/div/div[3]/div[2]/div[1]/ul/li[5]/button').click()
+    time.sleep(1)
 
     return driver
+
 

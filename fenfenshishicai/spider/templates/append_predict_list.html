@@ -43,9 +43,6 @@
                                     <th>
 										日期
 									</th>
-                                    <th>
-										时间
-									</th>
 									<th>
 										期数
 									</th>
@@ -55,15 +52,12 @@
 									<th>
 										预测号码
 									</th>
-                                    <th>
-										每个名次
-									</th>
 
-                                    <th>
+                                    {% comment %}<th>
                                         下注倍数
-                                    </th>
+                                    </th>{% endcomment %}
 
-									<th>
+									{% comment %}<th>
 										总购买
 									</th>
 									<th>
@@ -71,25 +65,32 @@
 									</th>
 									<th>
 										命中率
-									</th>
+									</th>{% endcomment %}
 
 									<th>
 										每注金额
 									</th>
 
                                     <th>
-										下注金额
+										前二倍数
 									</th>
+
                                     <th>
-										盈利
+										前二命中
 									</th>
+
+                                    <th>
+										后二倍数
+									</th>
+
+                                    <th>
+										后二命中
+									</th>
+
 									<th>
 										是否购买
 									</th>
 
-                                    <th>
-										购买名次
-									</th>
 								</tr>
 						</thead>
 
@@ -104,9 +105,6 @@
                                     <td>
 										{{prob.kill_predict_date}}
 									</td>
-                                    <td>
-										{{prob.kill_predict_time}}
-									</td>
 									<td>
 										{{prob.lottery_id}}
 									</td>
@@ -117,15 +115,11 @@
 										{{prob.kill_predict_number_desc}}
 									</td>
 
-                                    <td>
-										{{prob.percent_all_list_desc}}
-									</td>
-
-                                    <td>
+                                    {% comment %}<td>
 										{{prob.predict_number_all}}
-									</td>
+									</td>{% endcomment %}
 
-									<td>
+									{% comment %}<td>
 										{{prob.predict_total}}
 									</td>
 									<td>
@@ -133,22 +127,28 @@
 									</td>
 									<td>
 										{{prob.predict_accuracy}}
-									</td>
+									</td>{% endcomment %}
+
 									<td>
 										{{prob.xiazhu_money}}
 									</td>
 
                                     <td>
-										{{prob.input_money}}
-									</td>
-									<td>
-										{{prob.gain_money}}
-									</td>
-									<td>
-										{{prob.is_xiazhu}}
+										{{prob.front_multiple}}
 									</td>
                                     <td>
-										{{prob.xiazhu_nums}}
+										{{prob.front_hit}}
+									</td>
+
+                                    <td>
+										{{prob.back_multiple}}
+									</td>
+                                    <td>
+										{{prob.back_hit}}
+									</td>
+
+									<td>
+										{{prob.is_xiazhu}}
 									</td>
 								</tr>
 							{% endfor %}

@@ -146,34 +146,60 @@ def spider_save_predict(interval):
                 spider_save_predict(interval)
 
 
+def spider_save_predict_old(interval):
+    #爬取当天结果,存入objects
+    html_json = get_html_result(interval)
+    if html_json == '':
+        pass
+    else:
+        open_lottery_id = load_lottery_predict(html_json)
+        pk_logger.debug("open_lottery_id: %s",open_lottery_id)
+        #获取models predict最新值
+        lottery_id, kill_predict_number, xiazhu_money = get_predict_model_value()
+        pk_logger.debug("lottery_id: %s",lottery_id)
+        #print "lottery_id",lottery_id
+        if lottery_id == 0:
+            pk_logger.debug("no predict record in history")
+            get_predict_kill_and_save()
+        else:
+            #获取该期的开奖号码
+            lottery_num,lottery_time = get_lottery_id_number(lottery_id)
+            pk_logger.info("lottery_num: %s",lottery_num)
+            if (lottery_num):
+                last_purchase_hit,xiazhu_nums = calculate_percisoin(lottery_id, lottery_num, kill_predict_number, lottery_time, xiazhu_money)
+                get_predict_kill_and_save()
+            else:
+                pk_logger.info("wait kaijiang. continue....")
+                time.sleep(1)
+                spider_save_predict(interval)
+
+        time.sleep(3)
+
+
 def get_predict_kill_and_save():
     #爬取下一期predict
     predict_lottery_id,purchase_number_list,purchase_number_list_desc,xiazhu_index_list, purchase_mingci_number = get_purchase_list_99_v1()
     if predict_lottery_id != 0:
         #更新models
-        #print "save:",predict_lottery_id,'  ',purchase_number_list
         pk_logger.info("save predict_lottery_id : %s",predict_lottery_id)
         pk_logger.info("save purchase_number_list : %s", purchase_number_list)
-        #current_date = time.strftime('%Y%m%d',time.localtime(time.time()))
-
-        #根据时间判断日期是否加一天
-        # jump_flag_date = time.strftime("%H:%M:%S", time.localtime())
-        # if jump_flag_date > '23:57:59' or jump_flag_date <= '00:03:00':
-        #     current_date = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime("%Y%m%d")
-        # else:
-        #     current_date = time.strftime('%Y%m%d',time.localtime(time.time()))
-
         current_date = GetDate().get_base_date_forward_six()
         save_predict_time = datetime.datetime.now().strftime("%Y%m%d %H:%M:%S")
 
         xiazhu_money = 1
+        kill_predicts = KillPredict.objects.filter(lottery_id=int(predict_lottery_id))
         #保存
-        p = KillPredict(kill_predict_date=current_date, save_predict_time=save_predict_time, lottery_id = int(predict_lottery_id), kill_predict_number = purchase_number_list,
+        if 1:
+            p = KillPredict(kill_predict_date=current_date, save_predict_time=save_predict_time, lottery_id = int(predict_lottery_id), kill_predict_number = purchase_number_list,
                             kill_predict_number_desc=purchase_number_list_desc, percent_all_list_desc='',
                             predict_total=0, target_total=0, predict_accuracy=0,
                             predict_number_all=xiazhu_index_list, xiazhu_money=xiazhu_money, gain_money=0, is_xiazhu=0, input_money=0, xiazhu_nums=purchase_mingci_number)
-        p.save()
-        print "save ok"
+            p.save()
+            print "predict save ok"
+        else:
+            print "exsist predict_lottery_id:",predict_lottery_id
+
+
 
 
 
@@ -207,18 +233,25 @@ def calculate_percisoin(lottery_id, lottery_num, kill_predict_number, lottery_ti
     if len(result_data) == len(purchase_number_list):
         all_count = 0
         target_count = 0
-        for i in range(len(result_data)):
-            if  '0' in purchase_number_list[i]:
-                pass
-            else:
-                #print " result_data[i],purchase_number_list[i]:", str(int(result_data[i])),purchase_number_list[i]
-                pk_logger.debug("mingci [%d]: %s",(i+1),str(int(result_data[i])%2))
-                pk_logger.debug("purchase_number_list[i]: %s",purchase_number_list[i])
-                if str(int(result_data[i])%2) in purchase_number_list[i]:
-                    target_count = target_count +  1
-                all_count = all_count + len(purchase_number_list[i])
+        front_hit = 0
+        back_hit = 0
+        print "purchase_number_list:",purchase_number_list
+        print "result_data:",result_data
+
+        if len(purchase_number_list[0])>1:
+            if result_data[0] != result_data[1] and  result_data[0] in purchase_number_list[0] and  result_data[1] in purchase_number_list[0] :
+                target_count = 1
+                front_hit = 1
+            all_count = len(purchase_number_list[0])
+
+        if len(purchase_number_list[4])>1:
+            if result_data[3] != result_data[4] and result_data[3] in purchase_number_list[4] and  result_data[4] in purchase_number_list[4]:
+                target_count = target_count + 1
+                back_hit = 1
+            all_count = all_count +  len(purchase_number_list[4])
         #print "all_count,target_count:", all_count,target_count
         pk_logger.debug("------all_count: %d  ----target_count: %d ",all_count,target_count)
+        time.sleep(5)
         if all_count == 0:
             predict_accuracy = 0
             gain_money = 0
@@ -227,7 +260,7 @@ def calculate_percisoin(lottery_id, lottery_num, kill_predict_number, lottery_ti
             gain_money = (target_count * 9.9 - all_count) * xiazhu_money
             #print float(float(target_count)/float(all_count))
             pk_logger.debug("target_count: %f",float(float(target_count)/float(all_count)))
-        try:
+        if 1:
             p = KillPredict.objects.get(lottery_id=lottery_id)
             xiazhu_nums = p.xiazhu_nums
             p.kill_predict_time = lottery_time
@@ -235,17 +268,24 @@ def calculate_percisoin(lottery_id, lottery_num, kill_predict_number, lottery_ti
             p.predict_total = all_count
             p.target_total = target_count
             p.predict_accuracy = predict_accuracy
+            p.front_hit = front_hit
+            p.back_hit = back_hit
+
+            p.front_multiple = 1
+            p.back_multiple = 1
+
             if p.is_xiazhu == 1:
                 p.gain_money = gain_money
             #p.input_money = all_count * xiazhu_money
             #p.is_xiazhu = 1
             p.save()
+            pk_logger.info("save calc result ok !")
             #判断上一期是否盈利，未盈利，则记录该名词，以后每期购买该名次，知道买中
             if gain_money<0:
                 return False, xiazhu_nums
             else:
                 return True, xiazhu_nums
-        except:
+        else:
             #print "the ",lottery_id," is repeat!!!"
             pk_logger.debug("the %d is repeat!!!",lottery_id)
             return True,1
@@ -303,3 +343,18 @@ def get_predict(request):
         #print "last lottery_id:",obj_pro_lottery[0].lottery_id
         #pk_logger.info("last lottery_id: %d",obj_pro_lottery[0].lottery_id)
     return HttpResponse(json.dumps(result_info), content_type="application/json")
+
+
+def get_open_lottery(request):
+    current_date = GetDate().get_base_date_forward_six()
+    result_info = {}
+
+    obj_pro_lottery = PredictLottery.objects.filter(lottery_date=current_date).order_by("-lottery_id")
+    if len(obj_pro_lottery) == 0:
+        result_info['last_lottery_id'] = 0
+        pass
+    else:
+        result_info['last_lottery_id'] = int(obj_pro_lottery[0].lottery_id)
+        result_info['lottery_number'] = obj_pro_lottery[0].lottery_number
+
+    return render_to_response('test.html',{"obj_pro_predict":obj_pro_lottery})

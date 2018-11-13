@@ -40,6 +40,8 @@ urlpatterns = [
     #for
     url(r'^get_append_predict_data/$', append_predict_tx_fenfen.predict_main.get_predict),
 
+    url(r'^get_open_lottery/$', append_predict_tx_fenfen.predict_main.get_open_lottery),
+
     url(r'^append_predict_report/$', append_predict_tx_fenfen.report.predict_report),
     #'get_append_predict_data'
     # url(r'^set_user_huayu/$', spider_server.user_huayu.set_user),

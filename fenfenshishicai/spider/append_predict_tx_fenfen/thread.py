@@ -58,7 +58,7 @@ def loaddata(c_thread,thread_num,interval):
         if jump_flag_date > '23:02:00' or jump_flag_date < '00:58:00':
             time.sleep(60)
         else:
-            pk_logger.info("start purchase")
+            pk_logger.info("start predict")
             append_predict_tx_fenfen.predict_main.spider_save_predict(interval)
             time.sleep(1)
     #print "exit!"
