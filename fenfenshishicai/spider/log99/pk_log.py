@@ -15,7 +15,8 @@ class GetDate:
 
 class GetRule:
     def get_purchase_multiple(self):
-        return [1,3,5,7,9,11]
+        #return [1,3,9,29,92,293,942]
+        return [1,2,4,9,19,41,89,192,416,906,1970]
 
 # 创建一个logger
 class PkLog:

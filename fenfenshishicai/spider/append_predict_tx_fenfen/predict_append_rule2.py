@@ -412,8 +412,8 @@ def parase_lotterys(lottery):
 
     return base_lottery_list,parity_lottery_list,larsma_lottery_list
 
-def get_purchase_list_99_v1():
-    # current_date = time.strftime('%Y%m%d',time.localtime(time.time()))
+def get_purchase_list_99_auto(interval):
+
     current_date = GetDate().get_base_date_forward_six()
     lotterys = PredictLottery.objects.filter(lottery_date=current_date).order_by("-lottery_id")
     print "len(lotterys)", len(lotterys)
@@ -467,61 +467,56 @@ def get_purchase_list_99_v1():
     return predict_lottery_id,purchase_number_list,purchase_number_list_desc,xiazhu_index_list, purchase_mingci_number
 
 
-
-def get_purchase_list_99_v2():
-    # current_date = time.strftime('%Y%m%d',time.localtime(time.time()))
+def get_purchase_list_99_define(interval):
     current_date = GetDate().get_base_date_forward_six()
-    lotterys = PredictLottery.objects.filter(lottery_date=current_date)
+    lotterys = PredictLottery.objects.filter(lottery_date=current_date).order_by("-lottery_id")
+    print "len(lotterys)", len(lotterys)
+    last_lottery = 0
+    for lottery in lotterys:
+        last_lottery = lottery
+        break
+    if last_lottery == 0:
+        return 0,'','','', 1
+    predict_lottery_id = last_lottery.lottery_id + 1
 
-    predict_lottery_id = current_date + str(len(lotterys) + 1).zfill(4)
-    base_lottery_list,parity_lottery_list,larsma_lottery_list = parase_lotterys(lotterys)
-    purchase_number_list = []
-    tran_parity_lottery_list = map(list, zip(*parity_lottery_list))
+    delete_number_list = interval["in_number_ids"].split(',')
+    # pk_logger.info("=---------------------delete_number_list:%s",delete_number_list)
 
-    xiazhu_index_list = []
-    for parity_lottery in tran_parity_lottery_list:
-        xiazhu_index = 0
-        #正式
-        if parity_lottery[:18] == [1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1][::-1]:
-            xiazhu_index = 4
-            purchase_number_list.append(1)
-        elif parity_lottery[:18] == [0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0][::-1]:
-            xiazhu_index = 4
-            purchase_number_list.append(0)
+    purchase_number_list = ''
+    lottery_number_all = ['0','1','2','3','4','5','6','7','8','9']
+    last_lottery_id_list = delete_number_list
 
-        elif parity_lottery[:17] == [1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0][::-1]:
-            xiazhu_index = 3
-            purchase_number_list.append(0)
-        elif parity_lottery[:17] == [0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1][::-1]:
-            xiazhu_index = 3
-            purchase_number_list.append(1)
+    if last_lottery_id_list[0] == last_lottery_id_list[1]:
+        purchase_number_list = purchase_number_list + (str(-1))
+    else:
+        temp = lottery_number_all[:]
+        for last_lottery_id in last_lottery_id_list:
+            temp.remove(last_lottery_id)
+        temp_list = ''
+        for i in temp:
+            temp_list = temp_list + str(i) + '|'
+        purchase_number_list = purchase_number_list + (temp_list[:-1])
 
-        elif parity_lottery[:16] == [1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1][::-1]:
-            xiazhu_index = 2
-            purchase_number_list.append(1)
-        elif parity_lottery[:16] == [0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0][::-1]:
-            xiazhu_index = 2
-            purchase_number_list.append(0)
+    purchase_number_list = purchase_number_list + (',')
+    purchase_number_list = purchase_number_list + (str(-1))
+    purchase_number_list = purchase_number_list + (',')
+    purchase_number_list = purchase_number_list + (str(-1))
+    purchase_number_list = purchase_number_list + (',')
+    purchase_number_list = purchase_number_list + (str(-1))
+    purchase_number_list = purchase_number_list + (',')
 
-        elif parity_lottery[:15] == [1,1,0,1,0,1,0,1,0,1,0,1,0,1,0][::-1]:
-            xiazhu_index = 1
-            purchase_number_list.append(0)
-        elif parity_lottery[:15] == [0,0,1,0,1,0,1,0,1,0,1,0,1,0,1][::-1]:
-            xiazhu_index = 1
-            purchase_number_list.append(1)
+    if last_lottery_id_list[0] == last_lottery_id_list[1]:
+        purchase_number_list = purchase_number_list + (str(-1))
+    else:
+        temp = lottery_number_all[:]
+        for last_lottery_id in last_lottery_id_list:
+            temp.remove(last_lottery_id)
+        temp_list = ''
+        for i in temp:
+            temp_list = temp_list + str(i) + '|'
+        purchase_number_list = purchase_number_list + (temp_list[:-1])
 
-        elif parity_lottery[:14] == [0,0,1,0,1,0,1,0,1,0,1,0,1,0][::-1]:
-            xiazhu_index = 0
-            purchase_number_list.append(0)
-        elif parity_lottery[:14] == [1,1,0,1,0,1,0,1,0,1,0,1,0,1][::-1]:
-            xiazhu_index = 0
-            purchase_number_list.append(1)
-
-        else:
-            purchase_number_list.append(-1)
-
-        xiazhu_index_list.append(xiazhu_index)
-
+    xiazhu_index_list = [0,0,0,0,0]
     purchase_number_list_desc = str(purchase_number_list)
     purchase_mingci_number = 1
     print "purchase_number_list:",purchase_number_list

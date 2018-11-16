@@ -53,7 +53,7 @@ def get_html_result(interval):
 def load_lottery_predict(html_json):
     current_date = GetDate().get_base_date()
     #PredictLottery.objects.filter(lottery_date=current_date).delete()
-    pk_logger.info("hours is:%s",current_date)
+    #pk_logger.info("hours is:%s",current_date)
     obj_pro_predict = PredictLottery.objects.filter(lottery_date=current_date).order_by("-lottery_id")
     if len(obj_pro_predict)>1399:
         print "delete PredictLottery all"
@@ -75,7 +75,7 @@ def load_lottery_predict(html_json):
         ids = resultTable.find(class_='issue-numbers')
         date_ids = unicode(ids.string).encode('utf-8').strip()
         lottery_date = date_ids.split('-')[0]
-        lottery_id = date_ids.split('-')[1]
+        lottery_id = lottery_date + date_ids.split('-')[1]
         # print "lottery_date:",lottery_date
         # print "lottery_id:",lottery_id
         # time.sleep(1)

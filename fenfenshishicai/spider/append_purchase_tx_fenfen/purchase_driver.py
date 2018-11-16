@@ -13,7 +13,8 @@ pk_logger = PkLog('append_purchase_tx_fenfen.purchase_driver').log()
 def get_driver(username,password):
 
     # driver = webdriver.Firefox(executable_path = './log99/geckodriver.exe')
-    chromedriver = "E:\\python\\webdriver\\chrome\\chromedriver37.exe"
+    # chromedriver = "E:\\python\\webdriver\\chrome\\chromedriver37.exe"
+    chromedriver = "./log99/chromedriver37.exe"
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches",["ignore-certificate-errors"])
     driver = webdriver.Chrome(executable_path=chromedriver,chrome_options=options )
@@ -52,12 +53,15 @@ def get_driver(username,password):
             pk_logger.warn("登录异常，重新登录")
             time.sleep(5)
 
-            driver = webdriver.Firefox(executable_path = 'E:\\python\\webdriver\\firefox\\geckodriver.exe')
+            chromedriver = "./log99/chromedriver37.exe"
+            options = webdriver.ChromeOptions()
+            options.add_experimental_option("excludeSwitches",["ignore-certificate-errors"])
+            driver = webdriver.Chrome(executable_path=chromedriver,chrome_options=options )
             driver.get("https://x2.yeuss.com/#/")
             driver.maximize_window();
 
             #输入用户名
-            driver.find_element_by_class_name('loginTabContent').find_element_by_tag_name('input').send_keys('zhc133')
+            driver.find_element_by_class_name('loginTabContent').find_element_by_tag_name('input').send_keys(username)
             time.sleep(8)
 
             code_flag = True

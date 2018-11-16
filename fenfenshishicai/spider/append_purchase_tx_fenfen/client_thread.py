@@ -60,6 +60,6 @@ def loaddata(c_thread,thread_num,interval):
             time.sleep(60)
         else:
             append_purchase_tx_fenfen.purchase_client_main.get_predict_kill_and_save(interval)
-            time.sleep(5)
+            time.sleep(1)
     #print "exit!"
     pk_logger.info("退出自动化购买")

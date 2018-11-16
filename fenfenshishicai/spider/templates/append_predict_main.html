@@ -37,6 +37,18 @@
 					<h5 align="center">
 						自动化访问追加模式
 					</h5>
+
+                <form action="/index/" method="post" id="user_form">
+                <table class="table ">
+                    <tr>
+
+                        <td>
+                            过滤号码:例如(3,4)---留空使用预测模式：<input type="text" id="in_number_ids" name="in_number_ids_name" value="{{ in_number_back }}">
+                        </td>
+                    </tr>
+
+                </table>
+                </form>
                     <table style="BORDER-COLLAPSE: collapse" cellSpacing=1 cellPadding=6 width="100%" height=273 class="table table-striped table-bordered">
 						<thead>
 							<tr>
@@ -118,13 +130,73 @@ function judgeevaluation()
 }
 
 function start_thread(user_name){
-    post_form("/append_control_predict_thread/",{"user_name":user_name,"control":'start'});
+    in_number_ids = document.getElementById('in_number_ids').value;
+    in_number_ids_list = in_number_ids.split(",");
+    var commit_flag = false;
+    var auto_flag = true;
+
+    if (in_number_ids_list.length <= 1){
+        commit_flag = true;
+
+    }
+    if (in_number_ids_list.length <= 8 && in_number_ids_list.length >1){
+        commit_flag = true;
+        for (x in in_number_ids_list)
+        {
+            result = parseInt(in_number_ids_list[x]);
+            if (result >= 0 && result < 10 ){
+
+            }else{
+                commit_flag = false;
+            }
+        }
+        if (in_number_ids_list[0] == in_number_ids_list[1]){
+            commit_flag = false;
+        }
+        auto_flag = false;
+    }
+
+    if (commit_flag) {
+        post_form("/append_control_predict_thread/", {"user_name": user_name, "in_number_ids": in_number_ids, "auto_flag": auto_flag, "control": 'start'});
+    }else{
+        alert('请输入正确信息！');
+    }
 }
 
 function stop_thread(user_name){
+
+    in_number_ids = document.getElementById('in_number_ids').value;
+    in_number_ids_list = in_number_ids.split(",");
+    var commit_flag = false;
+    var auto_flag = true;
+
+    if (in_number_ids_list.length == 1){
+        commit_flag = true;
+
+    }
+    if (in_number_ids_list.length <= 8){
+        commit_flag = true;
+        for (x in in_number_ids_list)
+        {
+            result = parseInt(in_number_ids_list[x]);
+            if (result >= 0 && result < 10 ){
+
+            }else{
+                commit_flag = false;
+            }
+        }
+        if (in_number_ids_list[0] == in_number_ids_list[1]){
+            commit_flag = false;
+        }
+        auto_flag = false;
+    }
     var confirmMsg = confirm("确定停止?");
     if (confirmMsg) {
-          post_form("/append_control_predict_thread/",{"user_name":user_name,"control":'stop'});
+        if (commit_flag) {
+            post_form("/append_control_predict_thread/", {"user_name": user_name, "in_number_ids": in_number_ids, "auto_flag": auto_flag, "control":'stop'});
+        }else{
+            alert('请输入正确信息！');
+        }
     } else {
           return false;
     }

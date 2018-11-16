@@ -11,7 +11,7 @@ from append_purchase_tx_fenfen.models import KillPredict,PredictLottery
 
 from append_predict_tx_fenfen.thread import ThreadControl
 
-from append_predict_tx_fenfen.predict_append_rule2 import spider_predict_selenium,get_purchase_list_99_v2,get_purchase_list_99_v1
+from append_predict_tx_fenfen.predict_append_rule2 import spider_predict_selenium,get_purchase_list_99_auto,get_purchase_list_99_define
 
 from append_predict_tx_fenfen.spider_pk10 import get_html_result,get_lottery_id_number,load_lottery_predict
 import time
@@ -76,11 +76,23 @@ def predict_main(request):
 def control_predict_thread(request):
     user_name = request.POST['user_name']
     control = request.POST['control']
+    in_number_ids = request.POST['in_number_ids']
+    auto_flag = request.POST['auto_flag']
+
     info_dict = {}
 
+    info_dict["auto_flag"] = auto_flag
+    info_dict["in_number_ids"] = in_number_ids
     #显示活跃状态
     prob_user = ProbUser.objects.get(user_name=user_name)
     if control == 'start':
+        #清空历史记录
+        pk_logger.info("clean history predict data")
+        delete_kill_predict_current_date_restart()
+        pk_logger.info("clean history predict data")
+        delete_kill_predict_current_date_restart()
+        time.sleep(2)
+
         driver = spider_predict_selenium()
         info_dict["driver"] = driver
         #状态信息
@@ -113,7 +125,7 @@ def control_predict_thread(request):
             pk_logger.debug("not thread alive")
             #print "not thread alive"
     prob_user_list =  ProbUser.objects.all()
-    return render_to_response('append_predict_main.html',{"prob_user_list":prob_user_list})
+    return render_to_response('append_predict_main.html',{"prob_user_list":prob_user_list, "in_number_back":request.POST['in_number_ids']})
 
 
 
@@ -123,27 +135,39 @@ def spider_save_predict(interval):
     if html_json == '':
         pass
     else:
-        next_lottery_id = load_lottery_predict(html_json)
+        open_lottery_id = load_lottery_predict(html_json)
+        pk_logger.debug("open_lottery_id: %s",open_lottery_id)
         #获取models predict最新值
         lottery_id, kill_predict_number, xiazhu_money = get_predict_model_value()
-        pk_logger.debug("lottery_id: %s",lottery_id)
+        pk_logger.debug("predict_lottery_id: %s",lottery_id)
+
+        # current_date = GetDate().get_base_date()
+        # killpredicts = KillPredict.objects.filter(kill_predict_date = current_date).order_by("lottery_id")
+        # for killpredict in killpredicts:
+        #     print "front_multiple:",killpredict.front_multiple
+        #     if killpredict.front_multiple == None:
+        #         print "front_multiple is None"
+        #     else:
+        #         print "front_multiple error"
         #print "lottery_id",lottery_id
         if lottery_id == 0:
             pk_logger.debug("no predict record in history")
-            get_predict_kill_and_save()
+            get_predict_kill_and_save(interval)
         else:
             #获取该期的开奖号码
             lottery_num,lottery_time = get_lottery_id_number(lottery_id)
             pk_logger.info("lottery_num: %s",lottery_num)
             if (lottery_num):
                 last_purchase_hit,xiazhu_nums = calculate_percisoin(lottery_id, lottery_num, kill_predict_number, lottery_time, xiazhu_money)
-                # pk_logger.info("last_purchase_hit: %s",last_purchase_hit)
-                # pk_logger.info("xiazhu_nums: %s",xiazhu_nums)
-                get_predict_kill_and_save()
+                get_predict_kill_and_save(interval)
             else:
-                pk_logger.error("wait kaijiang. continue....")
-                time.sleep(1)
-                spider_save_predict(interval)
+                if int(open_lottery_id) > int(lottery_id):
+                    pk_logger.debug("last no open,just continue... ")
+                    get_predict_kill_and_save(interval)
+                else:
+                    pk_logger.info("wait kaijiang. continue....")
+                    time.sleep(1)
+                    spider_save_predict(interval)
 
 
 def spider_save_predict_old(interval):
@@ -176,9 +200,14 @@ def spider_save_predict_old(interval):
         time.sleep(3)
 
 
-def get_predict_kill_and_save():
+def get_predict_kill_and_save(interval):
     #爬取下一期predict
-    predict_lottery_id,purchase_number_list,purchase_number_list_desc,xiazhu_index_list, purchase_mingci_number = get_purchase_list_99_v1()
+
+    if interval["auto_flag"] == "true":
+        predict_lottery_id,purchase_number_list,purchase_number_list_desc,xiazhu_index_list, purchase_mingci_number = get_purchase_list_99_auto(interval)
+    else:
+        predict_lottery_id,purchase_number_list,purchase_number_list_desc,xiazhu_index_list, purchase_mingci_number = get_purchase_list_99_define(interval)
+
     if predict_lottery_id != 0:
         #更新models
         pk_logger.info("save predict_lottery_id : %s",predict_lottery_id)
@@ -251,7 +280,7 @@ def calculate_percisoin(lottery_id, lottery_num, kill_predict_number, lottery_ti
             all_count = all_count +  len(purchase_number_list[4])
         #print "all_count,target_count:", all_count,target_count
         pk_logger.debug("------all_count: %d  ----target_count: %d ",all_count,target_count)
-        time.sleep(5)
+        time.sleep(2)
         if all_count == 0:
             predict_accuracy = 0
             gain_money = 0
@@ -270,9 +299,6 @@ def calculate_percisoin(lottery_id, lottery_num, kill_predict_number, lottery_ti
             p.predict_accuracy = predict_accuracy
             p.front_hit = front_hit
             p.back_hit = back_hit
-
-            p.front_multiple = 1
-            p.back_multiple = 1
 
             if p.is_xiazhu == 1:
                 p.gain_money = gain_money
@@ -299,12 +325,17 @@ def calculate_percisoin(lottery_id, lottery_num, kill_predict_number, lottery_ti
 def delete_kill_predict_current_date(request):
 
     current_date = GetDate().get_base_date_forward_six()
-
     KillPredict.objects.filter(kill_predict_date=current_date).delete()
     obj_pro_predict = KillPredict.objects.filter(kill_predict_date=current_date)
 
     PredictLottery.objects.filter(lottery_date=current_date).delete()
     return render_to_response('test.html',{"obj_pro_predict":obj_pro_predict})
+
+def delete_kill_predict_current_date_restart():
+
+    current_date = GetDate().get_base_date_forward_six()
+    KillPredict.objects.filter(kill_predict_date=current_date).delete()
+    PredictLottery.objects.filter(lottery_date=current_date).delete()
 
 
 
